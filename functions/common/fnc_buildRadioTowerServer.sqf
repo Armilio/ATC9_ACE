@@ -25,7 +25,7 @@ if (isServer) then {
 		private _unit = _this select 0; 
 		private _hitSelection = _this select 1; 
 		_damage = 0;
-		if((_this select 4)=="SatchelCharge_Remote_Ammo" || (_this select 4)=="DemoCharge_Remote_Ammo") then { 
+		if((_this select 4)!="B_20mm_Tracer_Red") then { 
 			_unit gethit _hitSelection 
 		} else {  
 			_damage

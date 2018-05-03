@@ -25,7 +25,7 @@ if (isServer) then {
 		private _unit = _this select 0; 
 		private _hitSelection = _this select 1; 
 		_damage = 0;
-		if((_this select 4)!="B_20mm_Tracer_Red") then { 
+		if((_this select 4)!="B_20mm_Tracer_Red" && (_this select 4)!="ATC_R_70mm") then { 
 			_unit gethit _hitSelection 
 		} else {  
 			_damage

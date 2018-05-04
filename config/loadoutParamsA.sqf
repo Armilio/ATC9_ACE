@@ -22,7 +22,7 @@
             ["optic_Holosight","optic_aco","optic_Holosight_smg","optic_Aco_smg","optic_ACO_grn_smg"],
             ["acc_pointer_IR","ACE_acc_pointer_red","acc_flashlight"],
             [],
-            ["ACE_HandFlare_White","ACE_Chemlight_HiWhite","HandGrenade","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","SmokeShell","B_IR_Grenade","Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"],
+            ["ACE_HandFlare_White","ACE_Chemlight_HiWhite","HandGrenade","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShellYellow","SmokeShell","B_IR_Grenade","Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag"],
             [],
             ["V_TacChestrig_grn_F","H_Booniehat_khk_hs","ACE_MapTools","ACE_wirecutter","ACE_EarPlugs","ACE_Flashlight_MX991","ACE_IR_Strobe_Item","ItemMap","ItemCompass","ItemWatch","tf_anprc152","FirstAidKit","NVGoggles","Binocular"]
         ]
@@ -102,7 +102,7 @@
     [
         "HMG",
         [
-            ["LMG_Mk200_F","MMG_02_sand_F","LMG_03_F"],
+            ["LMG_Mk200_F","MMG_02_sand_F","LMG_03_F","arifle_MX_SW_F"],
             [],
             ["bipod_01_F_snd","bipod_01_F_blk","bipod_01_F_mtp"],
             [],
@@ -124,7 +124,7 @@
         ]   
     ],
     [
-        "EXP",
+        "EXP",//obsolete
         [
             [],
             [],
@@ -192,7 +192,7 @@
             ["muzzle_snds_L","muzzle_snds_acp","muzzle_snds_338_sand","muzzle_snds_B_snd_F"],
             [],
             [],
-            ["U_B_GhillieSuit","ACE_Altimeter","ACE_Tripod","ACE_RangeCard","ACE_Vector"]
+            ["U_B_GhillieSuit","ACE_Altimeter","ACE_Tripod","ACE_RangeCard"]
         ]   
     ],
     [

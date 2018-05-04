@@ -102,6 +102,9 @@ class CfgMusic
 #include "hpp\Styles.hpp"
 #include "hpp\Types.hpp"
 
+// Inventory
+#include "hpp\InventoryLoadouts.hpp"
+
 // Dialogs
 #include "hpp\DiagSelectionArea.hpp"
 

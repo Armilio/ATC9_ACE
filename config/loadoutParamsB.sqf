@@ -22,7 +22,7 @@
             ["optic_ACO_grn","optic_Holosight","optic_aco","optic_Holosight_smg","optic_Aco_smg","optic_ACO_grn_smg"],
             ["acc_pointer_IR","ACE_acc_pointer_red","acc_flashlight"],
             [],
-            ["HandGrenade","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShell","SmokeShellYellow","O_IR_Grenade","Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow"],
+            ["HandGrenade","SmokeShellBlue","SmokeShellGreen","SmokeShellOrange","SmokeShellPurple","SmokeShellRed","SmokeShell","SmokeShellYellow","O_IR_Grenade","Chemlight_blue","Chemlight_green","Chemlight_red","Chemlight_yellow","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSBoundingMine_Range_Mag","APERSTripMine_Wire_Mag","APERSMine_Range_Mag","ClaymoreDirectionalMine_Remote_Mag"],
             [],
             ["H_HelmetO_ocamo","U_O_CombatUniform_ocamo","V_I_G_resistanceLeader_F","ACE_Flashlight_MX991","V_HarnessO_brn","H_MilCap_ocamo","ACE_MapTools","ACE_wirecutter","ACE_EarPlugs","ACE_Flashlight","ACE_IR_Strobe_Item","ItemMap","ItemCompass","ItemWatch","tf_fadak","FirstAidKit","NVGoggles_OPFOR","Binocular"]
         ]
@@ -90,7 +90,7 @@
     [
         "LMG",
         [
-            ["arifle_CTARS_blk_F"],
+            ["arifle_CTARS_blk_F","LMG_Zafir_F"],
             [],
             ["bipod_02_F_blk","bipod_02_F_hex","bipod_02_F_tan"],
             [],
@@ -102,7 +102,7 @@
     [
         "HMG",
         [
-            ["LMG_Zafir_F","MMG_01_tan_F"],
+            ["LMG_Zafir_F","MMG_01_tan_F","arifle_CTARS_blk_F"],
             [],
             ["bipod_02_F_blk","bipod_02_F_hex","bipod_02_F_tan"],
             [],
@@ -124,7 +124,7 @@
         ]   
     ],
     [
-        "EXP",
+        "EXP",//obsolete
         [
             [],
             [],
@@ -192,7 +192,7 @@
             ["muzzle_snds_L","muzzle_snds_acp","muzzle_snds_93mmg_tan","muzzle_snds_B_snd_F"],
             [],
             [],
-            ["U_O_GhillieSuit","ACE_Tripod","ACE_RangeCard","ACE_Vector"]
+            ["U_O_GhillieSuit","ACE_Tripod","ACE_RangeCard"]
         ]   
     ],
     [

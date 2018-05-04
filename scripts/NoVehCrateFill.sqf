@@ -12,15 +12,28 @@
 BxC additemcargoglobal ["NVGoggles",4]; BxC additemcargoglobal ["NVGoggles_OPFOR",4];
 BxC addweaponcargoglobal ["ATC_TITAN_AA_starter",1];
 BxC addmagazinecargoglobal ["Titan_AA",2];
+BxC addmagazinecargoglobal["APERSTripMine_Wire_Mag", 1];
+BxC addmagazinecargoglobal ["APERSMine_Range_Mag", 2];
+BxC addmagazinecargoglobal ["ATMine_Range_Mag", 1];
+BxC addmagazinecargoglobal ["DemoCharge_Remote_Mag", 1];
 
 BxB additemcargoglobal ["NVGoggles",4];
 BxB additemcargoglobal ["NVGoggles_OPFOR",4];
 BxB addweaponcargoglobal ["ATC_TITAN_AA_starter",1];
 BxB addmagazinecargoglobal ["Titan_AA",2];
+BxB addmagazinecargoglobal["APERSTripMine_Wire_Mag", 1];
+BxB addmagazinecargoglobal ["APERSMine_Range_Mag", 2];
+BxB addmagazinecargoglobal ["ATMine_Range_Mag", 1];
+BxB addmagazinecargoglobal ["DemoCharge_Remote_Mag", 1];
 
 BxA additemcargoglobal ["NVGoggles",4]; BxA additemcargoglobal ["NVGoggles_OPFOR",4];
 BxA addweaponcargoglobal ["ATC_TITAN_AA_starter",1];
 BxA addmagazinecargoglobal ["Titan_AA",2];
+BxA addmagazinecargoglobal["APERSTripMine_Wire_Mag", 1];
+BxA addmagazinecargoglobal ["APERSMine_Range_Mag", 2];
+BxA addmagazinecargoglobal ["ATMine_Range_Mag", 1];
+BxA addmagazinecargoglobal ["DemoCharge_Remote_Mag", 1];
+
 
 if ((ATC_DB_attSide == OPFOR) && (ATC_DB_defSide == BLUFOR)) then {
 	BxB addmagazinecargoglobal ["200Rnd_65x39_cased_Box",2];

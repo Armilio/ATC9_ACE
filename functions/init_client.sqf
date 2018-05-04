@@ -23,7 +23,7 @@ if (!isDedicated) then {
             * ATC_basicLoadout
             * Files: init_client.sqf
             */
-            ATC_basicLoadout = [player, ATC_basicLoadoutsA] call ATC_fnc_getBasicLoadout;
+            //ATC_basicLoadout = [player, ATC_basicLoadoutsA] call ATC_fnc_getBasicLoadout;
 
             /**
             * ATC_sideAllowedGears
@@ -88,7 +88,7 @@ if (!isDedicated) then {
             ATC_sidevehicleRestrictions = [player, ATC_vehicleRestrictionsB] call ATC_fnc_getVehicleRestrictions;
             
             /* Gears */
-            ATC_basicLoadout = [player, ATC_basicLoadoutsB] call ATC_fnc_getBasicLoadout;
+            //ATC_basicLoadout = [player, ATC_basicLoadoutsB] call ATC_fnc_getBasicLoadout;
 
             ATC_sideAllowedGears = ["all", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
 
@@ -131,13 +131,17 @@ if (!isDedicated) then {
         }
     } forEach (ATC_sideAllowedGears + ATC_sideAllowedAmmo);
 
-    player setVariable ["atc_loadout", ATC_basicLoadout, false];
+    //player setVariable ["atc_loadout", ATC_basicLoadout, false];
 
-    player call ATC_fnc_addGears;    
+    //player call ATC_fnc_addGears;
+    
+    _class = player getVariable ["class",""];
+    [player,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
+	
     player call ATC_fnc_refillClientCrates;
     
     //ADDED BY FLIPPER
-    player call ATC_fnc_saveCurrentGears;
+    //player call ATC_fnc_saveCurrentGears;
     //
 
     /* Vehicles */
@@ -215,7 +219,7 @@ if (!isDedicated) then {
 
         if (_arg_container in [ATC_weaponsCrate, ATC_ammoCrate, ATC_weaponItemsCrate, ATC_itemsCrate]) then {
             _arg_unit call ATC_fnc_refillClientCrates;
-            _arg_unit call ATC_fnc_saveCurrentGears;          
+            //_arg_unit call ATC_fnc_saveCurrentGears;          
         };
     }];
 

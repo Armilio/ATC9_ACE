@@ -3,19 +3,8 @@
 if (!IsServer) exitwith{};
 waituntil {time > 5};
 {//Settare vite a init server/partita
-	[_x,5,false] call BIS_fnc_respawnTickets; 
+	[_x,3,false] call BIS_fnc_respawnTickets; 
 }foreach allUnits;
-
-UIDArray = [];
-UIDTicketsArray = [];
-
-{//Riempire gli array con in memoria giocatori e vite.
-	PUID = getPlayerUID _x;
-	UIDArray pushBackUnique PUID; 
-	UIDTicketsArray pushbackUnique [PUID, 5];
-}foreach allUnits; 
-publicVariable "UIDArray";
-publicVariable "UIDTicketsArray";
 
 /*waituntil {time > 0};
 while {time < 6000} do { // controllare costantemente vite dei giocatori per spectator

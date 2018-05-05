@@ -12,7 +12,7 @@
 		
 		case ("str_b_soldier_gl_f0" call BIS_fnc_localize):
 		{
-			_class = "Granadier";
+			_class = "Grenadier";
 		};
 		
 		case ("str_b_soldier_lat_f0" call BIS_fnc_localize):
@@ -80,10 +80,14 @@
 			_class = "Teamleader";
 		};
 		
+		case ("str_b_officer_f0" call BIS_fnc_localize):
+		{
+			_class = "Commander";
+		};
+		
 		default
 		{
 			["The editor placed unit isn't right! Player: %1 , Classname: %2", player,_nomeclasse] call BIS_fnc_error;
-			
 		};
 
 	};

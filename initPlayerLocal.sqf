@@ -1,7 +1,7 @@
 
 	 _nomeclasse = typeOf player;
 	 _class = [configfile >> "CfgVehicles" >> _nomeclasse >> "displayName"] call BIS_fnc_getCfgData;
-	//private _recon = 0;
+	//private _recon = 0; (vedere quante variabili tenere nell'init in editor)
 	
 	switch (_class) do
 	{
@@ -80,12 +80,14 @@
 	{
 		case west:
 		{
-			class = _class
+			_class = _class + "B";
+			player setVariable ["class",_class,false];
 		};
 		
 		case east:
 		{
-			class = _class
+			_class = _class + "R";
+			player setVariable ["class",_class,false];
 		};
 		
 	};

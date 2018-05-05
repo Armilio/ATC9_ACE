@@ -136,6 +136,8 @@ if (!isDedicated) then {
     //player call ATC_fnc_addGears;
     
     _class = player getVariable ["class",""];
+    _level = player getVariable ["level",1];
+    _class = [_class,_level] joinString "";
     [player,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
 	
     player call ATC_fnc_refillClientCrates;

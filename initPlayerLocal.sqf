@@ -88,22 +88,17 @@
 
 	};
 	
-	_PUID = getPlayerUID player;
-	_intIndex = UIDArray find _PUID;
-	_intArray = UIDTicketsArray select _intIndex;
-	_level = (_intArray select 1);
-	
 	switch (side player) do
 	{
 		case west:
 		{
-			_class = [_class,"B",_level] joinString "";
+			_class = [_class,"B"] joinString "";
 			player setVariable ["class",_class,false];
 		};
 		
 		case east:
 		{
-			_class = [_class,"R",_level] joinString "";
+			_class = [_class,"R"] joinString "";
 			player setVariable ["class",_class,false];
 		};
 		

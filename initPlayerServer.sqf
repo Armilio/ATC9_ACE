@@ -80,7 +80,7 @@ if (_isJIP) then
 			_Array24 set [0, _JIPUID];
 			_Array24 set [1, _JIPUIDtickets];
 			UIDTicketsArray set [_sel1, _Array24];
-			_level = _JIPUIDtickets
+			_level = _JIPUIDtickets;
 			
 			publicVariable "UIDTicketsArray";
 			
@@ -107,7 +107,7 @@ else
 
 if (_level > 0) then
 {
-	_JIPPlayerThis setVariable ["level",_level,false];
+	_JIPlayerThis setVariable ["level",_level,false];
 };
 
 //criticità: 

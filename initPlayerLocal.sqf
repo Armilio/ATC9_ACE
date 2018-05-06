@@ -45,7 +45,7 @@
 			_class = "Sniper";
 		};
 		
-		case ("str_B_officer_f0" call BIS_fnc_Localize):
+		case ("str_B_spotter_f0" call BIS_fnc_Localize):
 		{
 			_class = "Spotter";
 		};

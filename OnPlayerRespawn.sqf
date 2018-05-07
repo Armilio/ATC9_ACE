@@ -10,7 +10,7 @@ _newPGTickets2 = [_newPG2,nil,true] call BIS_fnc_respawnTickets;
 	_Vite2 = _Array20 select 1;
 	
 	_class = _newPG2 getVariable ["class",""];
-	_class = [_class,_level] joinString "";
+	_class = [_class,_Vite2] joinString "";
 	_newPG2,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
 	
 if (time > 10 && (_sel4 >= 0)) then {

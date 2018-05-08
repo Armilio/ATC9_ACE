@@ -1032,7 +1032,7 @@ class CfgRespawnInventory
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR","ACE_RangeTable_82mm","ACE_Kestrel4500"};
 			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
 		};
-	
+};
 	
 	
 	

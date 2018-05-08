@@ -44,7 +44,7 @@
 		case ("str_b_soldier_m_f0" call BIS_fnc_localize):
 		{
 			//Tiratore Scelto (NATO(Uomini))
-			_class = "DesignatedMarksman";
+			_class = "DM";
 		};
 		
 		case ("str_a3_cfgvehicles_o_sharpshooter_f0" call BIS_fnc_localize):
@@ -99,6 +99,12 @@
 		{
 			//Ufficiale (NATO(Uomini))
 			_class = "Commander";
+		};
+		
+		case ("str_B_recon_F0" call BIS_fnc_localize):
+		{
+			//Ricognitore esploratore (NATO(Uomini(Forze speciali))
+			_class = "SF";
 		};
 		
 		default

@@ -159,7 +159,7 @@ while {!ATC_gameStoped} do {
 				};
 			};
 			//Countdown settore contestato, added by Armilio, ATC9
-			if (_currLevel= 0 && (_attakers/2 > _defenders)) then {
+			if (_currLevel == 0 && (_attakers/2 > _defenders)) then {
 				
 				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 
@@ -177,7 +177,7 @@ while {!ATC_gameStoped} do {
 					call ATC_fnc_changeAreaSide;
 				};		
 			};
-			if (_currLevel= 1 && (_attakers/2.5 > _defenders)) then {
+			if (_currLevel == 1 && (_attakers/2.5 > _defenders)) then {
 				
 				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 

@@ -86,14 +86,15 @@ if (isServer) then {
         R_C7 setpos getmarkerpos "sec_C";
         R_C8 setpos getmarkerpos "sec_C";
 	};
-*/	
+*/
+Contested = 0;
     [] spawn {
         private ['_data'];        
         waitUntil {ATC_gameStarted};
 
         estimatedTimeLeft ATC_gameTimeLimit;
 
-        while {time <= ATC_gameTimeLimit} do {
+        while {time <= ATC_gameTimeLimit && Contested == 1} do {
             sleep 1;
         };
 

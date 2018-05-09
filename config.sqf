@@ -10,6 +10,7 @@ ATC_sideNameB = "RedFor";
 
 ATC_sideMrkColorA = "ColorWEST";
 ATC_sideMrkColorB = "ColorEAST";
+ATC_sideMrkColorC = "ColorBlack";
 
 ATC_areaMrkName = "mrk_area_";
 ATC_sectorMrkName = "mrk_sector_%1_";

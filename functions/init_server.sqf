@@ -94,7 +94,7 @@ Contested = 0;
 
         estimatedTimeLeft ATC_gameTimeLimit;
 
-        while {time <= ATC_gameTimeLimit && Contested == 1} do {
+        while {time <= ATC_gameTimeLimit || Contested == 1} do {
             sleep 1;
         };
 

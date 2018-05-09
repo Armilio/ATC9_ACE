@@ -109,7 +109,7 @@ while {!ATC_gameStoped} do {
 			//Countdown settore contestato, added by Armilio, ATC9
 			if (_currLevel == 0) then {
 			if (_attakers/2 > _defenders) then {
-				if (contested == 0) then { //per evitare che rimanga hint per tutto cd 
+				if (_countdownProv >= _countdown) then { //per evitare che rimanga hint per tutto cd 
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
 				contested = 1;	//delay fine missione
@@ -137,7 +137,7 @@ while {!ATC_gameStoped} do {
 			};
 			if (_currLevel == 1) then {
 			if (_attakers/2.5 > _defenders) then {
-				if (contested == 0) then {
+				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
 				contested = 1;	
@@ -181,7 +181,7 @@ while {!ATC_gameStoped} do {
 			//Countdown settore contestato, added by Armilio, ATC9
 			if (_currLevel == 0) then {
 			if (_attakers/2 > _defenders) then {
-				if (contested == 0) then {
+				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
 				contested = 1;
@@ -208,7 +208,7 @@ while {!ATC_gameStoped} do {
 			};
 			if (_currLevel == 1) then {
 			if (_attakers/2.5 > _defenders) then {
-				if (contested == 0) then {
+				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
 				contested = 1;	

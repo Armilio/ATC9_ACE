@@ -109,11 +109,11 @@ while {!ATC_gameStoped} do {
 			//Countdown settore contestato, added by Armilio, ATC9
 			if (_currLevel= 0 && (_attakers/2 > _defenders)) then {
 				
-				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
 				if (_countdownProv > 0) then {
-					[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
 				};
 				if (_countdownProv < 1) then {
 					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
@@ -134,10 +134,10 @@ while {!ATC_gameStoped} do {
 					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
 				};
 				if (_countdownProv < 1) then {
-					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
-					_arg_marker setMarkerColor ATC_sideMrkColorA;
+					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					_arg_marker setMarkerColor ATC_sideMrkColorB;
 
-					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
+					[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
 					_timeChanged = time;
                 
 					call ATC_fnc_changeAreaSide;
@@ -161,11 +161,11 @@ while {!ATC_gameStoped} do {
 			//Countdown settore contestato, added by Armilio, ATC9
 			if (_currLevel == 0 && (_attakers/2 > _defenders)) then {
 				
-				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
 				if (_countdownProv > 0) then {
-					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
+					[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
 				};
 				if (_countdownProv < 1) then {
 					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
@@ -179,11 +179,11 @@ while {!ATC_gameStoped} do {
 			};
 			if (_currLevel == 1 && (_attakers/2.5 > _defenders)) then {
 				
-				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
 				if (_countdownProv > 0) then {
-					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
+					[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
 				};
 				if (_countdownProv < 1) then {
 					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;

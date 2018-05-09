@@ -4,13 +4,14 @@
 * @author ^eNable [enc0ded] <enc0ded.enable@gmail.com>
 *		Edited by {BDR}*Armilio*© for ATC7
 *		Edited by {BDR}*Armilio*© for ATC8
+*		Edited by {BDR}*Armilio*© for ATC9
 * @param string _this select 0 Marker name
 * @public_variable ATC_PV_deffenders%marker text% Num of deffenders in area
 * @public_variable ATC_PV_attackers%marker text% Num of attackers in area
 * @return void
 */
 
-private ["_arg_marker","_marker_info","_timeChanged","_timeKept","_paramDefenders","_paramAttckers","_currLevel","_prevLevel","_levelCondition","_unitsInSector","_VehInSector","_attakers","_defenders", "_SpecialForces"];
+private ["_arg_marker","_marker_info","_timeChanged","_timeKept","_paramDefenders","_paramAttckers","_currLevel","_prevLevel","_levelCondition","_unitsInSector","_VehInSector","_attakers","_defenders", "_SpecialForces","_countdown"];
 
 _arg_marker = _this select 0;
 
@@ -21,6 +22,8 @@ _timeKept = 0;
 
 _paramDefenders = 0;
 _paramAttckers = 0;
+_countdown = ATC_SectorCountdown;
+_countdownProv = _countdown;
 
 _currLevel = 0;
 _prevLevel = 0;
@@ -75,10 +78,10 @@ while {!ATC_gameStoped} do {
         
         switch (markerColor _arg_marker) do {
             case ATC_sideMrkColorA: {
-                [_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideA, _currLevel, _paramDefenders, _paramAttckers]] call ATC_fnc_setInfoMarker;
+                [_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideA, _currLevel, _paramDefenders, _paramAttckers, _countdown]] call ATC_fnc_setInfoMarker;
             };
             case ATC_sideMrkColorB: {
-                [_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideB, _currLevel, _paramDefenders, _paramAttckers]] call ATC_fnc_setInfoMarker;
+                [_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideB, _currLevel, _paramDefenders, _paramAttckers, _countdown]] call ATC_fnc_setInfoMarker;
             };
         };
 
@@ -103,6 +106,43 @@ while {!ATC_gameStoped} do {
 					call ATC_fnc_changeAreaSide;
 				};           
 			};
+			//Countdown settore contestato, added by Armilio, ATC9
+			if (_currLevel= 0 && (_attakers/2 > _defenders)) then {
+				
+				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+
+				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
+				if (_countdownProv > 0) then {
+					[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
+				};
+				if (_countdownProv < 1) then {
+					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					_arg_marker setMarkerColor ATC_sideMrkColorB;
+
+					[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
+					_timeChanged = time;
+                
+					call ATC_fnc_changeAreaSide;
+				};		
+			};
+			if (_currLevel= 1 && (_attakers/2.5 > _defenders)) then {
+				
+				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+
+				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
+				if (_countdownProv > 0) then {
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
+				};
+				if (_countdownProv < 1) then {
+					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					_arg_marker setMarkerColor ATC_sideMrkColorA;
+
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
+					_timeChanged = time;
+                
+					call ATC_fnc_changeAreaSide;
+				};		
+			};
          };
         case ATC_sideMrkColorB: {
             _attakers = {_x == ATC_sideA} count _unitsInSector;
@@ -112,11 +152,48 @@ while {!ATC_gameStoped} do {
 					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 					_arg_marker setMarkerColor ATC_sideMrkColorA;
 
-					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers]] call ATC_fnc_setInfoMarker;
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
 					_timeChanged = time;
                 
 					call ATC_fnc_changeAreaSide;
 				};
+			};
+			//Countdown settore contestato, added by Armilio, ATC9
+			if (_currLevel= 0 && (_attakers/2 > _defenders)) then {
+				
+				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+
+				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
+				if (_countdownProv > 0) then {
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
+				};
+				if (_countdownProv < 1) then {
+					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					_arg_marker setMarkerColor ATC_sideMrkColorA;
+
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
+					_timeChanged = time;
+                
+					call ATC_fnc_changeAreaSide;
+				};		
+			};
+			if (_currLevel= 1 && (_attakers/2.5 > _defenders)) then {
+				
+				[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+
+				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
+				if (_countdownProv > 0) then {
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
+				};
+				if (_countdownProv < 1) then {
+					[format ["Sector %1 has been taken by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					_arg_marker setMarkerColor ATC_sideMrkColorA;
+
+					[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
+					_timeChanged = time;
+                
+					call ATC_fnc_changeAreaSide;
+				};		
 			};
         };
       };

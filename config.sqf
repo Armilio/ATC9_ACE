@@ -35,7 +35,7 @@ ATC_sectorDifficultyParams = [
     ["_timeKept <= 60*60", 0, 4, 6],
     ["_timeKept > 60*60", 1, 4, 8]
 ];
-ATC_SectorCountdown=300; //add by Armilio atc9
+ATC_SectorCountdown=60*4; //added by Armilio atc9
 
 /**
 * Body cleaner params

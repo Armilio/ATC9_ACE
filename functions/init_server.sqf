@@ -98,7 +98,7 @@ Contested = 0;
             sleep 1;
         };
 	if (contested == 1) then {
-		sleep (ATC_SectorCountdown + 60);
+		sleep (ATC_SectorCountdown + 60); //tempo supplementare
 	};
 
         [true, "ATC_fnc_showEndScene", nil, true] spawn BIS_fnc_MP;

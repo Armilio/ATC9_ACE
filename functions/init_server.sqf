@@ -94,9 +94,12 @@ Contested = 0;
 
         estimatedTimeLeft ATC_gameTimeLimit;
 
-        while {time <= ATC_gameTimeLimit || Contested == 1} do {
+        while {time <= ATC_gameTimeLimit} do {
             sleep 1;
         };
+	if (contested == 1) then {
+		sleep (ATC_SectorCountdown + 60);
+	};
 
         [true, "ATC_fnc_showEndScene", nil, true] spawn BIS_fnc_MP;
     };

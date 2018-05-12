@@ -97,9 +97,9 @@ Contested = 0;
         while {time <= ATC_gameTimeLimit} do {
             sleep 1;
         };
-	if (contested == 1) then {
+	/*if (contested == 1) then {
 		sleep (ATC_SectorCountdown + 60); //tempo supplementare
-	};
+	};*/
 
         [true, "ATC_fnc_showEndScene", nil, true] spawn BIS_fnc_MP;
     };

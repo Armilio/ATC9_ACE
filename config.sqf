@@ -53,12 +53,12 @@ ATC_vehicleRestrictionsB = call compile preprocessFileLineNumbers "config\vehicl
 
 ATC_limitedWeaponCrateParamsA = [
     [["ATC_TITAN_AT_B",10], ["ATC_TITAN_AA_B",10],["ToolKit",40],["ATC_TITAN_AA_starter",0]],
-    [["NLAW_F", 10],["Titan_AP",2],["ATC_MAG_Titan_AT_B", 10],["Titan_AA", 13],["MRAWS_HEAT_F", 35],["MRAWS_HE_F", 8], ["SLAMDirectionalMine_Wire_Mag", 10],["ATMine_Range_Mag", 20],["APERSMine_Range_Mag", 10],["APERSTripMine_Wire_Mag", 15],["APERSBoundingMine_Range_Mag",0],["APERSMine_Range_Mag", 10],["APERSTripMine_Wire_Mag", 15],["DemoCharge_Remote_Mag", 30],["SatchelCharge_Remote_Mag",10],["ClaymoreDirectionalMine_Remote_Mag", 15],["ACE_1Rnd_82mm_Mo_HE",0],["ACE_1Rnd_82mm_Mo_Smoke",0],["ACE_1Rnd_82mm_Mo_Illum",0]],
+    [["ATC_NLAW_F", 4],["ATC_NLAW_F", 6],["Titan_AP",2],["Titan_AT", 6],["Titan_AA", 13],["MRAWS_HEAT_F", 35],["MRAWS_HE_F", 8], ["SLAMDirectionalMine_Wire_Mag", 10],["ATMine_Range_Mag", 20],["APERSMine_Range_Mag", 10],["APERSTripMine_Wire_Mag", 15],["APERSBoundingMine_Range_Mag",0],["APERSMine_Range_Mag", 10],["APERSTripMine_Wire_Mag", 15],["DemoCharge_Remote_Mag", 30],["SatchelCharge_Remote_Mag",10],["ClaymoreDirectionalMine_Remote_Mag", 15],["ACE_1Rnd_82mm_Mo_HE",0],["ACE_1Rnd_82mm_Mo_Smoke",0],["ACE_1Rnd_82mm_Mo_Illum",0]],
 	[["tf_rt1523g_big",25],["ACE_TacticalLadder_Pack",10],["B_Parachute", 15],["B_AssaultPack_rgr", 20], ["B_TacticalPack_oli", 20], ["B_Carryall_oli", 20]]
 ];
 ATC_limitedWeaponCrateParamsB = [
     [["ATC_TITAN_AT_O",10], ["ATC_TITAN_AA_O",10],["ToolKit",40],["ATC_TITAN_AA_starter",0]],
-    [["Vorona_HE", 4],["Vorona_HEAT", 8],["Titan_AP",2],["ATC_MAG_Titan_AT", 10],["Titan_AA", 10],["RPG32_HE_F",8],["ATC_RPG32_F", 35],["SLAMDirectionalMine_Wire_Mag", 10],["ATMine_Range_Mag", 20],["APERSMine_Range_Mag", 10],["APERSTripMine_Wire_Mag", 15],["APERSBoundingMine_Range_Mag",0],["DemoCharge_Remote_Mag", 30],["SatchelCharge_Remote_Mag",10],["ClaymoreDirectionalMine_Remote_Mag", 15],["ACE_1Rnd_82mm_Mo_HE",0],["ACE_1Rnd_82mm_Mo_Smoke",0],["ACE_1Rnd_82mm_Mo_Illum",0]],
+    [["Vorona_HE", 4],["Vorona_HEAT", 6],["Titan_AP",2],["Titan_AT", 6],["Titan_AA", 10],["RPG32_HE_F",8],["ATC_RPG32_F", 35],["SLAMDirectionalMine_Wire_Mag", 10],["ATMine_Range_Mag", 20],["APERSMine_Range_Mag", 10],["APERSTripMine_Wire_Mag", 15],["APERSBoundingMine_Range_Mag",0],["DemoCharge_Remote_Mag", 30],["SatchelCharge_Remote_Mag",10],["ClaymoreDirectionalMine_Remote_Mag", 15],["ACE_1Rnd_82mm_Mo_HE",0],["ACE_1Rnd_82mm_Mo_Smoke",0],["ACE_1Rnd_82mm_Mo_Illum",0]],
 	[["tf_mr3000",25],["ACE_TacticalLadder_Pack",10],["B_Parachute", 15], ["B_FieldPack_ocamo", 20], ["B_TacticalPack_ocamo", 20], ["B_Carryall_cbr", 20]]
 ];
 

@@ -22,6 +22,11 @@ _items = [];
 	};
 } forEach (uniformItems _arg_unit + vestItems _arg_unit + backpackItems _arg_unit);
 
+/*if (backpack _arg_unit) then
+{
+	_items set [count _items,backpack _arg_unit];
+};*/
+
 /*{
 	if !(_x in _items) then {
 		_items set [count _items, _x];

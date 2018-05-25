@@ -60,8 +60,12 @@ if (!isDedicated) then {
     };
 
     _class = (player getVariable ["inventory",""]) select 0;
+    _oppositeclass = (player getVariable ["inventory",""]) select 2;
     _level = player getVariable ["level",1];
     _class = [_class,_level] joinString "";
+    _oppositeclass = [_oppositeclass,_level] joinString "";
+    _inventory = [_class,(player getVariable ["inventory",""]) select 1,_oppositeclass,(player getVariable ["inventory",""]) select 3];
+    player setVariable ["inventory",_inventory];
     [player,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
     ATC_allowedGearForTake = [player] call ATC_fnc_getInvData;
 	

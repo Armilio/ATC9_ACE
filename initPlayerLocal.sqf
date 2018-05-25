@@ -118,14 +118,14 @@
 	{
 		case west:
 		{
-			_class = [_class,"B"] joinString "";
-			player setVariable ["class",_class,false];
+			_inventory = [[_class,"B"] joinString "",["Common","B"] joinString "",[_class,"R"] joinString "",["Common","R"] joinString""];
+			player setVariable ["inventory",_inventory,false];
 		};
 		
 		case east:
 		{
-			_class = [_class,"R"] joinString "";
-			player setVariable ["class",_class,false];
+			_inventory = [[_class,"R"] joinString "",["Common","R"] joinString "",[_class,"B"] joinString "",["Common","B"] joinString""];
+			player setVariable ["inventory",_inventory,false];
 		};
 		
 	};

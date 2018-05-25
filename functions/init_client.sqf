@@ -17,49 +17,6 @@ if (!isDedicated) then {
 
             ATC_sidevehicleRestrictions = [player, ATC_vehicleRestrictionsA] call ATC_fnc_getVehicleRestrictions;
             
-            /* Gears */
-
-            /**
-            * ATC_basicLoadout
-            * Files: init_client.sqf
-            */
-            //ATC_basicLoadout = [player, ATC_basicLoadoutsA] call ATC_fnc_getBasicLoadout;
-
-            /**
-            * ATC_sideAllowedGears
-            * Files: init_client.sqf
-            */
-            ATC_sideAllowedGears = ["all", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-            
-            /**
-            * ATC_sideAllowedWeapons
-            * Files: init_client.sqf, fnc_refillClientCrates.sqf
-            */
-            ATC_sideAllowedWeapons = ["weapons", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-
-            /**
-            * ATC_allAllowedWeapons
-            * Files: init_client.sqf
-            */
-            ATC_allAllowedWeapons = (["weapons", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses) + ATC_sideAllowedWeapons;
-            
-            /**
-            * ATC_sideAllowedOptics
-            * ATC_sideAllowedPointers
-            * ATC_sideAllowedMuzzles
-            * ATC_sideAllowedAdditionalAmmo
-            * ATC_sideAllowedItems
-            * Files: init_client.sqf, fnc_refillClientGrates.sqf
-            */
-            ATC_sideAllowedOptics = ["optics", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedPointers = ["pointers", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedMuzzles = ["muzzles", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedAdditionalAmmo = ["additionalAmmo", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedItems = ["items", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-
-            ATC_sideRestrictedAmmo = ["restrictedAmmo", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses;
-            ATC_restrictedAmmo = ATC_sideRestrictedAmmo + (["restrictedAmmo", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses);
-
             /**
             * ATC_weaponsCrate
             * ATC_ammoCrate
@@ -86,24 +43,7 @@ if (!isDedicated) then {
             /* Vehicles */
 
             ATC_sidevehicleRestrictions = [player, ATC_vehicleRestrictionsB] call ATC_fnc_getVehicleRestrictions;
-            
-            /* Gears */
-            //ATC_basicLoadout = [player, ATC_basicLoadoutsB] call ATC_fnc_getBasicLoadout;
-
-            ATC_sideAllowedGears = ["all", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-
-            ATC_sideAllowedWeapons = ["weapons", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-            ATC_allAllowedWeapons = (["weapons", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses) + ATC_sideAllowedWeapons;
-
-            ATC_sideAllowedOptics = ["optics", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedPointers = ["pointers", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedMuzzles = ["muzzles", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedAdditionalAmmo = ["additionalAmmo", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-            ATC_sideAllowedItems = ["items", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-
-            ATC_sideRestrictedAmmo = ["restrictedAmmo", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses;
-            ATC_restrictedAmmo = ATC_sideRestrictedAmmo + (["restrictedAmmo", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses);
-
+           
             ATC_weaponsCrate = ["Box_FIA_Wps_F", "mrk_weaponCrateB"] call ATC_fnc_createCrate;
             ATC_ammoCrate = ["Box_FIA_Ammo_F", "mrk_ammoCrateB"] call ATC_fnc_createCrate;
             ATC_weaponItemsCrate = ["Box_FIA_Ammo_F", "mrk_weaponItemsCrateB"] call ATC_fnc_createCrate;
@@ -112,40 +52,14 @@ if (!isDedicated) then {
         };
     };
 
-    ATC_sideAllowedAmmo = (ATC_sideAllowedWeapons call ATC_fnc_getAllowedAmmo) - ATC_sideRestrictedAmmo;
-    ATC_allAllowedAmmo = (ATC_allAllowedWeapons call ATC_fnc_getAllowedAmmo) - ATC_restrictedAmmo;
-
-    ATC_sideAllowedWeaponItems = ATC_sideAllowedOptics + ATC_sideAllowedPointers + ATC_sideAllowedMuzzles;
-
-    ATC_allowedGearsForTake = (["all", player, ATC_loadoutParamsA] call ATC_fnc_getItemsListByClasses) + (["all", player, ATC_loadoutParamsB] call ATC_fnc_getItemsListByClasses) + ATC_allAllowedAmmo;
-    
-    /* Create array of disallowed gears for save */
-    ATC_limitedGears = (["limitedWeapons", ATC_limitedWeaponCrateParamsA + ATC_limitedWeaponCrateParamsB] call ATC_fnc_getLimitedItemsList) + (["limitedAmmo", ATC_limitedWeaponCrateParamsA + ATC_limitedWeaponCrateParamsB] call ATC_fnc_getLimitedItemsList) + ATC_restrictedAmmo;
-    
-     /* Create array of allowed gears for save */
-    ATC_allowedGearsForSave = [];
-    {
-        _item = _x;
-        if (({_x == _item} count ATC_limitedGears) == 0) then {
-            ATC_allowedGearsForSave pushBack _item;
-        }
-    } forEach (ATC_sideAllowedGears + ATC_sideAllowedAmmo);
-
-    //player setVariable ["atc_loadout", ATC_basicLoadout, false];
-
-    //player call ATC_fnc_addGears;
-    
     _class = player getVariable ["class",""];
     _level = player getVariable ["level",1];
     _class = [_class,_level] joinString "";
     [player,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
+    //ATC_allowedGearForTake = 
 	
     player call ATC_fnc_refillClientCrates;
     
-    //ADDED BY FLIPPER
-    //player call ATC_fnc_saveCurrentGears;
-    //
-
     /* Vehicles */
     waitUntil {!isNil "ATC_vehicles"};
 
@@ -171,8 +85,7 @@ if (!isDedicated) then {
     player addEventHandler ["Respawn", {        
         private ["_arg_unit"];
         _arg_unit = _this select 0;
-
-        _arg_unit call ATC_fnc_addGears;    
+    
         _arg_unit call ATC_fnc_refillClientCrates;        
     }];
 

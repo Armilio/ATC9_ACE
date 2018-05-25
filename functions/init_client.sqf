@@ -44,6 +44,13 @@ if (!isDedicated) then {
 
             ATC_sidevehicleRestrictions = [player, ATC_vehicleRestrictionsB] call ATC_fnc_getVehicleRestrictions;
            
+	   /**
+            * ATC_weaponsCrate
+            * ATC_ammoCrate
+            * ATC_weaponItemsCrate
+            * ATC_itemsCrate
+            * Files: init_client.sqf, fnc_fillCrate.sqf, fnc_refillClientGrates.sqf
+            */
             ATC_weaponsCrate = ["Box_FIA_Wps_F", "mrk_weaponCrateB"] call ATC_fnc_createCrate;
             ATC_ammoCrate = ["Box_FIA_Ammo_F", "mrk_ammoCrateB"] call ATC_fnc_createCrate;
             ATC_weaponItemsCrate = ["Box_FIA_Ammo_F", "mrk_weaponItemsCrateB"] call ATC_fnc_createCrate;
@@ -52,11 +59,11 @@ if (!isDedicated) then {
         };
     };
 
-    _class = player getVariable ["class",""];
+    _class = (player getVariable ["inventory",""]) select 0;
     _level = player getVariable ["level",1];
     _class = [_class,_level] joinString "";
     [player,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
-    //ATC_allowedGearForTake = 
+    ATC_allowedGearForTake = [player] call ATC_fnc_getInvData;
 	
     player call ATC_fnc_refillClientCrates;
     

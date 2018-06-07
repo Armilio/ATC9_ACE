@@ -3,29 +3,53 @@
 *
 * 
 */
-private ["_unit","_items"];
+private ["_unit","_inventoryParam","_subclassesPaths","_subclasses","_items"];
 
 _unit = _this select 0;
 _items = [];
 
-_inventoryParam = _unit getVariable ["inventory",[]];
+_inventoryParam = _unit getVariable ["inventory2",[]];
 
 {
-	_configClass = _inventoryParam select _ForEachIndex;
-	_subclasses = (missionconfigfile >> "AllowedCachesGear" >> _x) call BIS_fnc_getCfgSubclasses;
+	_configClass = _x;
+	_subclassesPaths = configProperties [missionconfigfile >> "AllowedCachesGear" >> _x, "true", true];
 	
 	{
-		_objects = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
+		_subclasses = [_x,[],true] call BIS_fnc_configPath; 
+		_subclasses = _subclasses - ["missionConfigFile","AllowedCachesGear",_configClass];
 		
-		{
-			_items pushbackUnique _x;
-			
-		} forEach _objects; 
+			{
+				
+				_arrayofobjects = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
+				
+				if (_x == "weapons") then
+				{
+					
+					{
+						_allMagazines = getArray (configFile >> "CfgWeapons" >> _x >> "magazines");
+						
+						{_items pushbackUnique _x} forEach _allMagazines;
+				
+						_items pushbackUnique _x;
+					
+					} forEach _arrayofobjects;
+				}
+				else
+				{
+					{
+				
+						_items pushbackUnique _x;
+					
+					} forEach _arrayofobjects;
+				};
+				 
+			} forEach _subclasses;
 		
-	} forEach _subclasses;
+	} forEach _subclassespaths;
 
 } forEach _inventoryParam;
 
 
 
 _items
+

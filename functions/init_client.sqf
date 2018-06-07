@@ -5,7 +5,8 @@ if (!isDedicated) then {
     waitUntil {!isNull player};
 
     switch (playerSide) do {
-        case ATC_sideA: {
+        case ATC_sideA: 
+		{
 
             ATC_friendlyMrkColor = ATC_sideMrkColorA;
             ATC_enemyMrkColor = ATC_sideMrkColorB;
@@ -33,7 +34,8 @@ if (!isDedicated) then {
 			ATC_VACrate1 setVehicleVarName "ATC_VACrate";
 			ATC_VACrate = ATC_VACrate1;*/
         };
-        case ATC_sideB: {
+        case ATC_sideB: 
+		{
             ATC_friendlyMrkColor = ATC_sideMrkColorB;
             ATC_enemyMrkColor = ATC_sideMrkColorA;
 
@@ -44,12 +46,12 @@ if (!isDedicated) then {
 
             ATC_sidevehicleRestrictions = [player, ATC_vehicleRestrictionsB] call ATC_fnc_getVehicleRestrictions;
            
-	   /**
+			/**
             * ATC_weaponsCrate
             * ATC_ammoCrate
             * ATC_weaponItemsCrate
             * ATC_itemsCrate
-            * Files: init_client.sqf, fnc_fillCrate.sqf, fnc_refillClientGrates.sqf
+            * Files: init_client.sqf, fnc_fillCrate.sqf, fnc_refillClientCrates.sqf
             */
             ATC_weaponsCrate = ["Box_FIA_Wps_F", "mrk_weaponCrateB"] call ATC_fnc_createCrate;
             ATC_ammoCrate = ["Box_FIA_Ammo_F", "mrk_ammoCrateB"] call ATC_fnc_createCrate;
@@ -59,15 +61,20 @@ if (!isDedicated) then {
         };
     };
 
-    _class = (player getVariable ["inventory",""]) select 0;
-    _oppositeclass = (player getVariable ["inventory",""]) select 2;
-    _level = player getVariable ["level",1];
+	_level = player getVariable ["level",1];
+	
+    _class = (player getVariable ["inventory",[]]) select 0;
     _class = [_class,_level] joinString "";
+    
+    _oppositeclass = (player getVariable ["inventory",[]]) select 2;
     _oppositeclass = [_oppositeclass,_level] joinString "";
-    _inventory = [_class,(player getVariable ["inventory",""]) select 1,_oppositeclass,(player getVariable ["inventory",""]) select 3];
-    player setVariable ["inventory",_inventory];
-    [player,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
-    ATC_allowedGearForTake = [player] call ATC_fnc_getInvData;
+    
+    _inventory = [_class,(player getVariable ["inventory",[]]) select 1,_oppositeclass,(player getVariable ["inventory",[]]) select 3];
+    player setVariable ["inventory2",_inventory];
+    
+    [player,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadinventory;
+    
+    ATC_allowedGearsForTake = [player] call ATC_fnc_getInvData;
 	
     player call ATC_fnc_refillClientCrates;
     
@@ -111,7 +118,8 @@ if (!isDedicated) then {
 //		hideBody _arg_unit;
     }];
 
-    player addEventHandler ["InventoryClosed", {
+    player addEventHandler ["InventoryClosed", 
+	{
         private ["_arg_unit","_arg_container"];
 
         _arg_unit = _this select 0;
@@ -120,16 +128,23 @@ if (!isDedicated) then {
         {
             scopeName "loop";
 
-            if !(_x in ATC_allowedGearsForTake) then {
-                _itemsName = if (isClass (configFile >> "CfgWeapons" >> _x)) then {
-                    getText (configFile >> "CfgWeapons" >> _x >> "displayName");
-                } else {
-                    if (isClass (configFile >> "CfgMagazines" >> _x)) then {
+            if !(_x in ATC_allowedGearsForTake) then 
+			{
+					
+					_itemsName = if (isClass (configFile >> "CfgWeapons" >> _x)) then 
+					{
+						getText (configFile >> "CfgWeapons" >> _x >> "displayName");
+					} 
+					else 
+					{
+						if (isClass (configFile >> "CfgMagazines" >> _x)) then {
                         getText (configFile >> "CfgMagazines" >> _x >> "displayName");
-                    } else {
+						} 
+						else 
+						{
                         ''
-                    };
-                };
+						};
+					};
 
                 systemChat format ["You can't carry %1", _itemsName];
                 
@@ -143,7 +158,8 @@ if (!isDedicated) then {
             };            
         } forEach (_arg_unit call ATC_fnc_getAllPlayerItems);
 
-        if (_arg_container in [ATC_weaponsCrate, ATC_ammoCrate, ATC_weaponItemsCrate, ATC_itemsCrate]) then {
+        if (_arg_container in [ATC_weaponsCrate, ATC_ammoCrate, ATC_weaponItemsCrate, ATC_itemsCrate]) then 
+		{
             _arg_unit call ATC_fnc_refillClientCrates;
             //_arg_unit call ATC_fnc_saveCurrentGears;          
         };
@@ -195,4 +211,3 @@ if (!isServer && local player) then {
 	[] execVM "scripts\clientDeGroup.sqf";
 };
 };
-	

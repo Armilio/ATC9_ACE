@@ -12,13 +12,15 @@ _newPGTickets2 = [_newPG2,nil,true] call BIS_fnc_respawnTickets;
 	_class = (_newPG2 getVariable ["inventory",[]]) select 0;
 	_class = [_class,_Vite2] joinString "";
 	
-	_oppositeclass = (player getVariable ["inventory",[]]) select 2;
-    _oppositeclass = [_oppositeclass,_Vite2] joinString "";
+	_oppositeclass = (_newPG2 getVariable ["inventory",[]]) select 2;
+    	_oppositeclass = [_oppositeclass,_Vite2] joinString "";
 	
 	[_newPG2,missionConfigFile >> "CfgRespawnInventory" >> _class] call BIS_fnc_loadInventory;
 	
 	_inventory = [_class,(player getVariable ["inventory",[]]) select 1,_oppositeclass,(player getVariable ["inventory",[]]) select 3];
-	player setVariable ["inventory2",_inventory];
+	_newPG2 setVariable ["inventory2",_inventory];
+	
+	ATC_allowedGearsForTake = [_newPG2] call ATC_fnc_getInvData;
 	
 if (time > 10 && (_sel4 >= 0)) then {
 	if (_Vite2 == 0) then {

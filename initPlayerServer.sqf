@@ -96,19 +96,14 @@ if (_isJIP) then
 	};
 	
 	JIPFlag = 0;
-}
-else
-{
-	_PUID = getPlayerUID player;
-	_intIndex = UIDArray find _PUID;
-	_intArray = UIDTicketsArray select _intIndex;
-	_level = (_intArray select 1);
+	
+	if (_level > 0) then
+	{
+		_JIPlayerThis setVariable ["level",_level,false];
+	};
 };
 
-if (_level > 0) then
-{
-	_JIPlayerThis setVariable ["level",_level,false];
-};
+
 
 //criticità: 
 //-

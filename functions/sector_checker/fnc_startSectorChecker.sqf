@@ -114,7 +114,7 @@ while {!ATC_gameStoped} do {
 				if (_countdownProv >= _countdown) then { //per evitare che rimanga hint per tutto cd 
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
-				contested = 1;	
+				//contested = 1;	
 				
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
 				if (_countdownProv > 0) then {
@@ -128,15 +128,15 @@ while {!ATC_gameStoped} do {
 					_timeChanged = time;
                 
 					call ATC_fnc_changeAreaSide;
-					contested = 0;	
+					//contested = 0;	
 				};		
 			}else{ //resettare cd se condiziona cessa
 				[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
 				_countdownProv = _countdown;
-				if (contested == 1) then {
-					contested = 0;	
-					[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
-				};	
+				//if (contested == 1) then {
+				//	contested = 0;	
+				//	[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				//};	
 			};
 			};
 			if (_currLevel == 1) then {
@@ -144,7 +144,7 @@ while {!ATC_gameStoped} do {
 				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
-				contested = 1;	
+				//contested = 1;	
 
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
 				if (_countdownProv > 0) then {
@@ -158,15 +158,15 @@ while {!ATC_gameStoped} do {
 					_timeChanged = time;
                 
 					call ATC_fnc_changeAreaSide;
-					contested = 0;	
+					//contested = 0;	
 				};		
 			}else{ //resettare cd se condiziona cessa
 				[_marker_info, ATC_sideMrkColorA, [markerText _arg_marker, ATC_sideNameA, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
 				_countdownProv = _countdown;
-				if (contested == 1) then {
-					contested = 0;	
-					[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
-				};	
+				//if (contested == 1) then {
+				//	contested = 0;	
+				//	[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				//};	
 			};
 			};
          };
@@ -194,7 +194,7 @@ while {!ATC_gameStoped} do {
 				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
-				contested = 1;
+				//contested = 1;
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
 				if (_countdownProv > 0) then {
 					[_marker_info, ATC_sideMrkColorC, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdownProv]] call ATC_fnc_setInfoMarker;
@@ -212,10 +212,10 @@ while {!ATC_gameStoped} do {
 			}else{ //resettare cd se condiziona cessa
 				[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
 				_countdownProv = _countdown;
-				if (contested == 1) then {
-					contested = 0;	
-					[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
-				};	
+				//if (contested == 1) then {
+				//	contested = 0;	
+				//	[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				//};	
 			};
 			};
 			if (_currLevel == 1) then {
@@ -236,15 +236,15 @@ while {!ATC_gameStoped} do {
 					_timeChanged = time;
                 
 					call ATC_fnc_changeAreaSide;
-					contested = 0;
+					//contested = 0;
 				};		
 			}else { //resettare cd se condiziona cessa
 				[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
 				_countdownProv = _countdown;
-				if (contested == 1) then {
-					contested = 0;	
-					[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
-				};	
+				//if (contested == 1) then {
+				//	contested = 0;	
+				//	[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				//};	
 			};
 			};
         };

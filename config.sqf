@@ -10,6 +10,7 @@ ATC_sideNameB = "RedFor";
 
 ATC_sideMrkColorA = "ColorWEST";
 ATC_sideMrkColorB = "ColorEAST";
+ATC_sideMrkColorC = "ColorBlack";
 
 ATC_areaMrkName = "mrk_area_";
 ATC_sectorMrkName = "mrk_sector_%1_";
@@ -34,6 +35,7 @@ ATC_sectorDifficultyParams = [
     ["_timeKept <= 60*60", 0, 4, 6],
     ["_timeKept > 60*60", 1, 4, 8]
 ];
+ATC_SectorCountdown=60*4; //added by Armilio atc9
 
 /**
 * Body cleaner params

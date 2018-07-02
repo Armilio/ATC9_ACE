@@ -216,6 +216,7 @@ class AllowedCachesGear
 			muzzle[] = {"muzzle_snds_M","muzzle_snds_L","muzzle_snds_H","muzzle_snds_acp","muzzle_snds_65_TI_blk_F"};
 			allowedAmmo[] = {"ClaymoreDirectionalMine_Remote_Mag","Laserbatteries","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
 			allowedItems[] = {"V_TacChestrig_grn_F","H_Booniehat_khk_hs","ACE_Clacker","ACE_SpottingScopeObject","ACE_SpottingScope","ACE_Altimeter","ACE_DAGR","ACE_microDAGR","ACE_NVG_Gen4","ACE_NVG_Wide","ATC_Laserdesignator_B"};
+			backpacks[] = {"B_Parachute"};
 		};
 		
 		class SFB1

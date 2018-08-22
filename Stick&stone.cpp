@@ -1,3 +1,4 @@
+
 class CfgPatches
 {
 	class SticksAndStones_ATC
@@ -14,6 +15,7 @@ class CfgPatches
 			"A3_Static_F_AA_01",
 			"A3_Characters_F",
 			"A3_Weapons_F",
+			"A3_Weapons_F_Tank",
 			"A3_Ui_F",
 			"A3_Drones_F_Soft_F_Gamma_UGV_01",
 			"A3_Drones_F_Air_F_Gamma_UAV_01",
@@ -507,6 +509,7 @@ class CfgVehicles
 					"1000Rnd_20mm_shells",
 					"PylonRack_1Rnd_ACE_Hellfire_AGM114K",
 					"PylonMissile_1Rnd_ACE_Hellfire_AGM114K",//"ATC_2Rnd_SCALPEL"
+					"ATC_38Rnd_HYDRA70",
 					"ATC_38Rnd_HYDRA70"
 					//"38Rnd_80mm_rockets"
 				};
@@ -1852,7 +1855,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class O_APC_Tracked_02_AA_F: O_APC_Tracked_02_base_F
+	/*class O_APC_Tracked_02_AA_F: O_APC_Tracked_02_base_F
 	{
 		class Components: Components
 		{
@@ -1920,7 +1923,7 @@ class CfgVehicles
 				};
 			};		
 		};
-	};
+	};*/
 	class Car_F: Car
 	{
 	};
@@ -2081,7 +2084,7 @@ class CfgVehicles
 			};
 		};	
 	};
-	class B_APC_Tracked_01_AA_F : B_APC_Tracked_01_base_F
+	/*class B_APC_Tracked_01_AA_F : B_APC_Tracked_01_base_F
 	{
 		//armor = 350;
 		class Components: Components
@@ -2138,16 +2141,14 @@ class CfgVehicles
 				};
 			};		
 		};
-	};
+	};*/
 	class strategic;
 	class ReammoBox: Strategic
 	{};
 	class WeaponHolder: ReammoBox
-	{};	
-	class Launcher_Base_F: WeaponHolder
-	{};	
-	class Weapon_launch_RPG32_F: Launcher_Base_F
-	{};	
+	{};		
+	class Launcher_Base_F : WeaponHolder{};
+	class Weapon_launch_RPG32_F : Launcher_Base_F{};
 	class ATC_Weapon_launch_RPG32_F: Weapon_launch_RPG32_F
 	{
 		scope=2;
@@ -2244,14 +2245,14 @@ class CfgMagazines
 	{
 		displayName="Titan AT missile (ATC)";
 		displayNameShort="Titan AT (ATC)";
-		ammo="ATC_M_Titan_AT";
+		ammo="M_Titan_AT";
 		mass=130;
 	};
 	class ATC_MAG_Titan_AT_B: Titan_AT
 	{
 		displayName="Titan AT missile (ATC)";
 		displayNameShort="Titan AT (ATC)";
-		ammo="ATC_M_Titan_AT_B";
+		ammo="M_Titan_AT";
 		mass=130;
 	};
 	class 5Rnd_GAT_missiles: VehicleMagazine
@@ -2363,6 +2364,15 @@ class CfgMagazines
 		modelSpecial="\A3\weapons_f\launchers\nlaw\nlaw_loaded_F";
 		model="\A3\weapons_f\launchers\nlaw\nlaw_proxy";
 	};
+	class 250Rnd_30mm_HE_shells: VehicleMagazine{};
+	class 250Rnd_30mm_HE_shells_Tracer_Green: 250Rnd_30mm_HE_shells{};
+	class ATC_250Rnd_30mm_HEDP_shells_Tracer_Green: 250Rnd_30mm_HE_shells_Tracer_Green
+	{
+		displayName="30mm HEDP";
+		displaynameshort="30mm HEDP";
+		count=250;
+		ammo="ATC_30mm_HEDP_Tracer_Green";
+	};	
 };
 	
 class CfgWeapons
@@ -2373,13 +2383,39 @@ class CfgWeapons
 		class WeaponSlotsInfo;
 	};
 	class launch_MRAWS_base_F: Launcher_Base_F
-	{
-	};	
-	class launch_MRAWS_olive_F: launch_MRAWS_base_F
-	{
-	};	
-	class launch_MRAWS_olive_rail_F: launch_MRAWS_olive_F
 	{};
+	class launch_MRAWS_olive_F: launch_MRAWS_base_F
+	{};	
+	class launch_MRAWS_olive_rail_F: launch_MRAWS_olive_F
+	{
+		class OpticsModes
+		{
+			class optic
+			{
+				opticsID=1;
+				useModelOptics=1;
+				opticsZoomMin=0.087499999;
+				opticsZoomMax=0.087499999;
+				opticsZoomInit=0.087499999;
+				distanceZoomMin=300;
+				distanceZoomMax=300;
+				memoryPointCamera="eye";
+				opticsFlare=1;
+				opticsDisablePeripherialVision=1;
+				cameraDir="look";
+				visionMode[]=
+				{
+					"Normal",
+					"NVG"
+				};
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
+			};
+		};	
+	};	
 	class ATC_launch_RPG32_F: launch_MRAWS_olive_rail_F
 	{
 		author="ATC";
@@ -2644,8 +2680,8 @@ class CfgWeapons
 	};
 	class missiles_titan: MissileLauncher
 	{
-		reloadTime=5;
-		magazineReloadTime=120;
+		reloadTime = 1;
+		magazineReloadTime = 6;
 	};	
 	class missiles_DAGR: RocketPods
 	{
@@ -2869,14 +2905,41 @@ class CfgWeapons
 			"6Rnd_105mm_HE_ATC" 
 		};
 	};
-	class gatling_30mm: CannonCore
+	class gatling_30mm_base: CannonCore
 	{
 		ballisticsComputer=2;
+		magazines[]=
+		{
+			"250Rnd_30mm_HE_shells",
+			"250Rnd_30mm_HE_shells_Tracer_Red",
+			"250Rnd_30mm_HE_shells_Tracer_Green",
+			"250Rnd_30mm_APDS_shells",
+			"250Rnd_30mm_APDS_shells_Tracer_Red",
+			"250Rnd_30mm_APDS_shells_Tracer_Green",
+			"250Rnd_30mm_APDS_shells_Tracer_Yellow",
+			"ATC_250Rnd_30mm_HEDP_shells_Tracer_Green" //new
+		};
+	};	
+	class gatling_30mm: gatling_30mm_base
+	{
+		scope=1;
+		muzzles[]=
+		{
+			"HEAT"
+		};
+		class HEAT: gatling_30mm_base
+		{
+			magazines[]=
+			{
+				"ATC_250Rnd_30mm_HEDP_shells_Tracer_Green"
+			};
+		};
 	};
 	class gatling_20mm: CannonCore
 	{
 		ballisticsComputer=2;
 	};
+		
 };
 class CfgAmmo
 {
@@ -2993,7 +3056,18 @@ class CfgAmmo
 		indirectHitRange = 2;
 		explosive = 0.4;
 	};
-	
+	class B_19mm_HE: BulletBase{};
+	class B_30mm_HE: B_19mm_HE{};
+	class B_30mm_MP: B_30mm_HE{};
+	class B_30mm_MP_Tracer_Green: B_30mm_MP{};
+	class ATC_30mm_HEDP_tracer_green: B_30mm_MP_Tracer_Green
+	{
+		hit=90;
+		indirectHit=10;
+		indirectHitRange=2;
+		warheadName="HEAT";
+		caliber=4.4000001;
+	};		
 };
 class cfgMods
 {

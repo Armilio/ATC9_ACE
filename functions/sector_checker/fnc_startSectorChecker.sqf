@@ -142,7 +142,7 @@ while {!ATC_gameStoped} do {
 			if (_currLevel == 1) then {
 			if (_attakers/2.5 > _defenders && (time <= ATC_gameTimeLimit)) then {
 				if (_countdownProv >= _countdown) then {
-					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					[format ["Sector %1 is disputed by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
 				//contested = 1;	
 
@@ -165,7 +165,7 @@ while {!ATC_gameStoped} do {
 				_countdownProv = _countdown;
 				//if (contested == 1) then {
 				//	contested = 0;	
-				//	[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				//	[format ["Sector %1 is no longer disputed", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				//};	
 			};
 			};
@@ -192,7 +192,7 @@ while {!ATC_gameStoped} do {
 			if (_currLevel == 0) then {
 			if (_attakers/2 > _defenders) then {
 				if (_countdownProv >= _countdown) then {
-					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					[format ["Sector %1 is disputed by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
 				//contested = 1;
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
@@ -214,14 +214,14 @@ while {!ATC_gameStoped} do {
 				_countdownProv = _countdown;
 				//if (contested == 1) then {
 				//	contested = 0;	
-				//	[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				//	[format ["Sector %1 is no longer disputed", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				//};	
 			};
 			};
 			if (_currLevel == 1) then {
 			if (_attakers/2.5 > _defenders) then {
 				if (_countdownProv >= _countdown) then {
-					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+					[format ["Sector %1 is disputed by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
 				//contested = 1;	
 				_countdownProv = _countdownProv - ATC_sectorCheckerDelay;
@@ -243,7 +243,7 @@ while {!ATC_gameStoped} do {
 				_countdownProv = _countdown;
 				//if (contested == 1) then {
 				//	contested = 0;	
-				//	[format ["Sector %1 is no longer contested", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
+				//	[format ["Sector %1 is no longer disputed", markerText _arg_marker, ATC_sideNameB], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				//};	
 			};
 			};

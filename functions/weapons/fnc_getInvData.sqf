@@ -1,55 +1,48 @@
 /**
 * ATC_fnc_getInvData
-*
-* 
 */
-private ["_unit","_inventoryParam","_subclassesPaths","_subclasses","_items"];
+private ["_unit","_invData","_PossInvData","_items"];
 
 _unit = _this select 0;
 _items = [];
 
-_inventoryParam = _unit getVariable ["inventory2",[]];
+waitUntil {!isNil{ _unit getVariable "inventory2"}};
+
+_invData = _unit getVariable "inventory2";
+_PossInvData = ["allowedItems","weapons","optics","pointers","allowedAmmo","muzzle"];
 
 {
-	_configClass = _x;
-	_subclassesPaths = configProperties [missionconfigfile >> "AllowedCachesGear" >> _x, "true", true];
+	_class = _x;
 	
 	{
-		_subclasses = [_x,[],true] call BIS_fnc_configPath; 
-		_subclasses = _subclasses - ["missionConfigFile","AllowedCachesGear",_configClass];
+		_data = [missionConfigFile >> "AllowedCachesGear" >> _class >> _x] call BIS_fnc_getCfgData;
 		
+		if (isNil "_data") exitWith {};
+		
+		if (_x == "weapons") then
+		{
+					
 			{
+				_allMagazines = getArray (configFile >> "CfgWeapons" >> _x >> "magazines");
 				
-				_arrayofobjects = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
-				
-				if (_x == "weapons") then
-				{
-					
-					{
-						_allMagazines = getArray (configFile >> "CfgWeapons" >> _x >> "magazines");
-						
-						{_items pushbackUnique _x} forEach _allMagazines;
-				
-						_items pushbackUnique _x;
-					
-					} forEach _arrayofobjects;
-				}
-				else
-				{
-					{
-				
-						_items pushbackUnique _x;
-					
-					} forEach _arrayofobjects;
-				};
-				 
-			} forEach _subclasses;
+				{_items pushbackUnique _x} forEach _allMagazines;
 		
-	} forEach _subclassespaths;
-
-} forEach _inventoryParam;
-
-
-
+				_items pushbackUnique _x;
+			
+			} forEach _data;
+		}
+		else
+		{
+			{
+		
+				_items pushbackUnique _x;
+			
+			} forEach _data;
+		};
+		
+	} forEach _PossInvData;
+	
+} forEach _invData;
+		
+	
 _items
-

@@ -1,1044 +1,1363 @@
 class CfgRespawnInventory
 {
-		class CommanderB3
-		{
-			weapons[] = {"arifle_MXC_F","Binocular"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"ACE_MapTools","ACE_EarPlugs","ACE_microDAGR","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","tf_rt1523g","H_Beret_Colonel","G_Aviator","ACE_optic_Hamr_PIP","ItemMap","ItemCompass","ItemWatch","tf_anprc152_1","NVGoggles"};
-			uniformclass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
 		
-		class CommanderB2
-		{
-			weapons[] = {"arifle_MXC_F","Binocular"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"ACE_MapTools","ACE_EarPlugs","ACE_microDAGR","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","tf_rt1523g","H_Beret_Colonel","G_Aviator","ACE_optic_Hamr_PIP","ItemMap","ItemCompass","ItemWatch","tf_anprc152_1","NVGoggles"};
-			uniformclass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
-	
-		class CommanderB1
-		{
-			weapons[] = {"arifle_MXC_F","Binocular"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"ACE_MapTools","ACE_EarPlugs","ACE_microDAGR","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","tf_rt1523g","H_Beret_Colonel","G_Aviator","ACE_optic_Hamr_PIP","ItemMap","ItemCompass","ItemWatch","tf_anprc152_1","NVGoggles"};
-			uniformclass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
-	
-		class CommanderR3
-		{
-			weapons[] = {"arifle_Katiba_F","Binocular"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","tf_fadak","NVGoggles_OPFOR","ACE_optic_Arco_PIP","V_HarnessO_brn","H_MilCap_ocamo"};
-			uniformClass = "U_O_OfficerUniform_ocamo";
-			backpack = "tf_mr3000";
-		};
-	
-		class CommanderR2
-		{
-			weapons[] = {"arifle_Katiba_F","Binocular"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","tf_fadak","NVGoggles_OPFOR","ACE_optic_Arco_PIP","V_HarnessO_brn","H_MilCap_ocamo"};
-			uniformClass = "U_O_OfficerUniform_ocamo";
-			backpack = "tf_mr3000";
-		};
-	
-		class CommanderR1
-		{
-			weapons[] = {"arifle_Katiba_F","Binocular"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","tf_fadak","NVGoggles_OPFOR","ACE_optic_Arco_PIP","V_HarnessO_brn","H_MilCap_ocamo"};
-			uniformClass = "U_O_OfficerUniform_ocamo";
-			backpack = "tf_mr3000";
-		};
-	
-		class TeamLeaderB3
-		{
-			weapons[] = {"arifle_MX_GL_F","hgun_P07_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","ACE_optic_Hamr_PIP"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
-	
-		class TeamLeaderB2
-		{
-			weapons[] = {"arifle_MX_GL_F","hgun_P07_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
 		
-		class TeamLeaderB1
-		{
-			weapons[] = {"arifle_MX_F","hgun_P07_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
-	
-		class TeamLeaderR3
-		{
-			weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","ACE_optic_Arco_PIP"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
-		
-		class TeamLeaderR2
-		{
-			weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_ACO_grn"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
-	
-		class TeamLeaderR1
-		{
-			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_ACO_grn"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
-		};
-		
+		////////////////////////////////////////////////////////////RIFLEMAN
 		class RiflemanB3
 		{
-			weapons[] = {"arifle_MX_F","hgun_P07_F","Binocular"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","Binocular"};
 			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
 		class RiflemanB2
 		{
-			weapons[] = {"arifle_MX_F","hgun_P07_F","Binocular"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","Binocular"};
 			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
 		class RiflemanB1
 		{
-			weapons[] = {"arifle_MX_F","hgun_P07_F","Binocular"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","Binocular"};
 			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
 		class RiflemanR3
 		{
-			weapons[] = {"arifle_MX_F","hgun_P07_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 	
 		class RiflemanR2
 		{
-			weapons[] = {"arifle_MX_F","hgun_P07_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 	
 		class RiflemanR1
 		{
-			weapons[] = {"arifle_MX_F","hgun_P07_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_Holosight"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 		
+		////////////////////////////////////////////////////////////TEAMLEADER
+		class TeamLeaderB3
+		{
+			weapons[] = {"arifle_MX_GL_Black_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
+		};
+	
+		class TeamLeaderB2
+		{
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
+		};
+		
+		class TeamLeaderB1
+		{
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
+		};
+	
+		class TeamLeaderR3
+		{
+			weapons[] = {"arifle_Katiba_GL_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+		
+		class TeamLeaderR2
+		{
+			weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+	
+		class TeamLeaderR1
+		{
+			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+		
+		////////////////////////////////////////////////////////////GRENADIER		
 		class GrenadierB3
 		{
-			weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","ACE_optic_Arco_PIP"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_MX_GL_Black_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 		
 		class GrenadierB2
 		{
-			weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_ACO_grn"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_MX_GL_Black_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
 		class GrenadierB1
 		{
-			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_ACO_grn"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_MX_GL_Black_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
 		class GrenadierR3
 		{
-			weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","ACE_optic_Arco_PIP"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_Katiba_GL_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 		
 		class GrenadierR2
 		{
-			weapons[] = {"arifle_Katiba_GL_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_ACO_grn"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_Katiba_GL_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 	
 		class GrenadierR1
 		{
-			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","Binocular"};
-			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellblue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","ItemMap","ItemCompass","ItemWatch","tf_anprc152","NVGoggles","optic_ACO_grn"};
-			uniformClass = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g";
+			weapons[] = {"arifle_Katiba_GL_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 		
-		class MedicB3
+        ////////////////////////////////////////////////////////////AUTOMATIC RIFLEMAN			
+		
+		class AutoriflemanB3
 		{
-		
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr_Medic";
-			weapons[] = {"Binocular","arifle_MXC_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","SmokeShellBlue","SmokeShellGreen","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
-		
+			weapons[] = {"LMG_Mk200_F","Binocular"};
+			magazines[] = {"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
 		};
 	
-		class MedicB2
+		class AutoriflemanB2
 		{
+			weapons[] = {"LMG_Mk200_F","Binocular"};
+			magazines[] = {"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
+		};
+	
+		class AutoriflemanB1
+		{
+			weapons[] = {"LMG_Mk200_F","Binocular"};
+			magazines[] = {"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
+		};
 		
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr_Medic";
-			weapons[] = {"Binocular","arifle_MXC_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","SmokeShellBlue","SmokeShellGreen","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+		class AutoriflemanR3
+		{
+			weapons[] = {"LMG_Zafir_F","Binocular"};
+			magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
+		};
 		
+		class AutoriflemanR2
+		{
+			weapons[] = {"LMG_Zafir_F","Binocular"};
+			magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
 		};
 	
-		class MedicB1
+		class AutoriflemanR1
 		{
+			weapons[] = {"LMG_Zafir_F","Binocular"};
+			magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
+		};
 		
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr_Medic";
-			weapons[] = {"Binocular","arifle_MXC_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","SmokeShellBlue","SmokeShellGreen","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
-		
-		};
-	
-		class MedicR3
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo_Medic";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShellPurple","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};	
-		};
-	
-		class MedicR2
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo_Medic";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShellPurple","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};	
-		};
-	
-		class MedicR1
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo_Medic";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShellPurple","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};	
-		};
-	
+		////////////////////////////////////////////////////////////MACHINEGUNNER	
+
 		class MachinegunnerB3
 		{
-			
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr";
-			weapons[] = {"Binocular","hgun_P07_F","arifle_MX_SW_F"};
-			magazines[] = {"HandGrenade","SmokeShellBlue","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","SmokeShell","16Rnd_9x21_Mag","100Rnd_65x39_caseless_mag","100Rnd_65x39_caseless_mag","100Rnd_65x39_caseless_mag"};
+			weapons[] = {"MMG_02_black_F","Binocular"};
+			magazines[] = {"130Rnd_338_Mag","130Rnd_338_Mag","130Rnd_338_Mag","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_m145","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
 		};
 	
 		class MachinegunnerB2
 		{
-
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr";
-			weapons[] = {"Binocular","hgun_P07_F","arifle_MX_SW_F"};
-			magazines[] = {"HandGrenade","SmokeShellBlue","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","SmokeShell","16Rnd_9x21_Mag","100Rnd_65x39_caseless_mag","100Rnd_65x39_caseless_mag","100Rnd_65x39_caseless_mag"};
+			weapons[] = {"MMG_02_black_F","Binocular"};
+			magazines[] = {"130Rnd_338_Mag","130Rnd_338_Mag","130Rnd_338_Mag","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
 		};
 	
 		class MachinegunnerB1
 		{
-	
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr";
-			weapons[] = {"Binocular","hgun_P07_F","arifle_MX_SW_F"};
-			magazines[] = {"HandGrenade","SmokeShellBlue","100Rnd_65x39_caseless_mag_Tracer","100Rnd_65x39_caseless_mag_Tracer","SmokeShell","16Rnd_9x21_Mag","100Rnd_65x39_caseless_mag","100Rnd_65x39_caseless_mag","100Rnd_65x39_caseless_mag"};
+			weapons[] = {"MMG_02_black_F","Binocular"};
+			magazines[] = {"130Rnd_338_Mag","130Rnd_338_Mag","130Rnd_338_Mag","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
 		};
 		
 		class MachinegunnerR3
 		{
-	
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"Binocular","LMG_Zafir_F","Throw","Put"};
-			magazines[] = {"HandGrenade","SmokeShellRed","SmokeShell","150Rnd_762x54_Box"};
+			weapons[] = {"MMG_01_tan_F","Binocular"};
+			magazines[] = {"150Rnd_93x64_Mag","150Rnd_93x64_Mag","150Rnd_93x64_Mag","handgrenade","smokeshellred","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_m145","RH_peq15b","RH_TD_ACB_b"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
 		};
 		
 		class MachinegunnerR2
 		{
-	
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"Binocular","LMG_Zafir_F","Throw","Put"};
-			magazines[] = {"HandGrenade","SmokeShellRed","SmokeShell","150Rnd_762x54_Box"};
+			weapons[] = {"MMG_01_tan_F","Binocular"};
+			magazines[] = {"150Rnd_93x64_Mag","150Rnd_93x64_Mag","150Rnd_93x64_Mag","handgrenade","smokeshellred","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b","RH_TD_ACB_b"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
 		};
 	
 		class MachinegunnerR1
 		{
-	
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"Binocular","LMG_Zafir_F","Throw","Put"};
-			magazines[] = {"HandGrenade","SmokeShellRed","SmokeShell","150Rnd_762x54_Box"};
+			weapons[] = {"MMG_01_tan_F","Binocular"};
+			magazines[] = {"150Rnd_93x64_Mag","150Rnd_93x64_Mag","150Rnd_93x64_Mag","handgrenade","smokeshellred","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b","RH_TD_ACB_b"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
 		};
 	
+		////////////////////////////////////////////////////////////MARKSMAN
+		
+		class MarksmanB3
+		{
+			weapons[] = {"arifle_SPAR_03_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class MarksmanB2
+		{
+			weapons[] = {"arifle_SPAR_03_blk_F","hgun_P07_F","Binocular"};
+            magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","handgrenade","smokeshellblue","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class MarksmanB1
+		{
+			weapons[] = {"arifle_SPAR_03_blk_F","hgun_P07_F","Binocular"};
+            magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","handgrenade","smokeshellblue","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class MarksmanR3
+		{
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		class MarksmanR2
+		{
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		class MarksmanR1
+		{
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM"};
+			uniformClass = "Uniform_CSAT";
+		};
+		
+		////////////////////////////////////////////////////////////RIFLEMAN_AT
+		
 		class RiflemanATB3
 		{
-			
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr";
-			weapons[] = {"Binocular","tf47_m3maaws","arifle_MX_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","tf47_m3maaws_HEDP"};
+			weapons[] = {"arifle_MX_Black_F","launch_MRAWS_olive_rail_F","Binocular"};
+			magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
 		};
 	
 		class RiflemanATB2
 		{
-		
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr";
-			weapons[] = {"Binocular","tf47_m3maaws","arifle_MX_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","tf47_m3maaws_HEDP"};
+			weapons[] = {"arifle_MX_Black_F","launch_MRAWS_olive_rail_F","Binocular"};
+			magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};		
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
 		};
 	
 		class RiflemanATB1
 		{
-			
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_AssaultPack_rgr";
-			weapons[] = {"Binocular","tf47_m3maaws","arifle_MX_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","tf47_m3maaws_HEDP"};
+			weapons[] = {"arifle_MX_Black_F","launch_MRAWS_olive_rail_F","Binocular"};
+			magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetSpecB_snakeskin","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr";		
 		};
-		
+				
 		class RiflemanATR3
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo_Medic";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShellPurple","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_Katiba_F","launch_MRAWS_sand_rail_F","Binocular"};
+            magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
 		};
-	
+		
 		class RiflemanATR2
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo_Medic";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShellPurple","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_Katiba_F","launch_MRAWS_sand_rail_F","Binocular"};
+            magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
 		};
 	
 		class RiflemanATR1
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo_Medic";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShellPurple","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_Katiba_F","launch_MRAWS_sand_rail_F","Binocular"};
+			magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_AssaultPack_cbr";
+		};
+		
+		////////////////////////////////////////////////////////////SPEC_AT
+		
+		class SpecATB3
+		{
+			weapons[] = {"arifle_MXC_Black_F","ATC_TITAN_AT_B","Binocular"};
+			magazines[] = {"ATC_MAG_Titan_AT_B","ATC_MAG_Titan_AT_B","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
 		};
 	
-		class DMB3
+		class SpecATB2
 		{
+			weapons[] = {"arifle_MXC_Black_F","ATC_TITAN_AT_B","Binocular"};
+			magazines[] = {"ATC_MAG_Titan_AT_B","ATC_MAG_Titan_AT_B","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};		
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+	
+		class SpecATB1
+		{
+			weapons[] = {"arifle_MXC_Black_F","launch_MRAWS_olive_rail_F","Binocular"};
+			magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+				
+		class SpecATR3
+		{
+			weapons[] = {"arifle_Katiba_C_F","ATC_TITAN_AT_O","Binocular"};
+            magazines[] = {"ATC_MAG_Titan_AT_B","ATC_MAG_Titan_AT_B","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};
+		
+		class SpecATR2
+		{
+			weapons[] = {"arifle_Katiba_C_F","ATC_TITAN_AT_O","Binocular"};
+            magazines[] = {"ATC_MAG_Titan_AT_B","ATC_MAG_Titan_AT_B","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};
+	
+		class SpecATR1
+		{
+			weapons[] = {"arifle_Katiba_C_F","launch_MRAWS_sand_rail_F","Binocular"};
+			magazines[] = {"MRAWS_HEAT_F","MRAWS_HEAT_F","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};
+		
+		////////////////////////////////////////////////////////////SPEC_AA
+		
+		class SSpecAAB3
+		{
+			weapons[] = {"arifle_MXC_Black_F","ATC_TITAN_AA_B","Binocular"};
+			magazines[] = {"Titan_AA","Titan_AA","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+	
+		class SpecAAB2
+		{
+			weapons[] = {"arifle_MXC_Black_F","ATC_TITAN_AA_B","Binocular"};
+			magazines[] = {"Titan_AA","Titan_AA","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};		
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+	
+		class SpecAAB1
+		{
+			weapons[] = {"arifle_MXC_Black_F","ATC_TITAN_AA_B","Binocular"};
+			magazines[] = {"Titan_AA","Titan_AA","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+				
+		class SpecAAR3
+		{
+			weapons[] = {"arifle_Katiba_C_F","ATC_TITAN_AA_O","Binocular"};
+            magazines[] = {"Titan_AA","Titan_AA","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};
+		
+		class SpecAAR2
+		{
+			weapons[] = {"arifle_Katiba_C_F","ATC_TITAN_AA_O","Binocular"};
+            magazines[] = {"Titan_AA","Titan_AA","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};
+	
+		class SpecAAR1
+		{
+			weapons[] = {"arifle_Katiba_C_F","ATC_TITAN_AA_O","Binocular"};
+			magazines[] = {"Titan_AA","Titan_AA","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};	
+				
+		////////////////////////////////////////////////////////////SPEC_EXP
 			
-			uniform = "U_B_CombatUniform_mcam";
-			weapons[] = {"Binocular","hgun_P07_F","arifle_MXM_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","16Rnd_9x21_Mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
+		class SpecExpB3
+		{
+			weapons[] = {"arifle_MXC_Black_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_Clacker","ACE_DefusalKit"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+	
+		class SpecExpB2
+		{
+			weapons[] = {"arifle_MXC_Black_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};		
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_Clacker","ACE_DefusalKit"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+	
+		class SpecExpB1
+		{
+			weapons[] = {"arifle_MXC_Black_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_Clacker","ACE_DefusalKit"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Kitbag_rgr";		
+		};
+				
+		class SpecExpR3
+		{
+			weapons[] = {"arifle_Katiba_C_F","Binocular"};
+            magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_Clacker","ACE_DefusalKit"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
 		};
 		
-		class DMB2
+		class SpecExpR2
 		{
+			weapons[] = {"arifle_Katiba_C_F","Binocular"};
+            magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_Clacker","ACE_DefusalKit"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};
+	
+		class SpecExpR1
+		{
+			weapons[] = {"arifle_Katiba_C_F","Binocular"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_Clacker","ACE_DefusalKit"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_Kitbag_cbr";
+		};	
+				
+		////////////////////////////////////////////////////////////SPEC_ASS
+				
+		class SpecAssB3
+		{
+			weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Bergen_mcamo_F";		
+		};
+	
+		class SpecAssB2
+		{
+			weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};		
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Bergen_mcamo_F";		
+		};
+	
+		class SpecAssB1
+		{
+			weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_Bergen_mcamo_F";		
+		};
+				
+		class SpecAssR3
+		{
+			weapons[] = {"arifle_Katiba_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "B_Bergen_hex_F";
+			backpack = "B_Kitbag_cbr";
+		};
+		
+		class SpecAssR2
+		{
+			weapons[] = {"arifle_Katiba_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "B_Bergen_hex_F";
+			backpack = "B_Kitbag_cbr";
+		};
+	
+		class SpecAssR1
+		{
+			weapons[] = {"arifle_Katiba_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "B_Bergen_hex_F";
+			backpack = "B_Bergen_mcamo_F";
+		};	
 			
-			uniform = "U_B_CombatUniform_mcam";
-			weapons[] = {"Binocular","hgun_P07_F","arifle_MXM_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","16Rnd_9x21_Mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class DMB1
-		{
-			
-			uniform = "U_B_CombatUniform_mcam";
-			weapons[] = {"Binocular","hgun_P07_F","arifle_MXM_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","16Rnd_9x21_Mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class DMR3
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","srifle_DMR_07_hex_F","Throw","Put"};
-			magazines[] = {"20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
-		};
-	
-		class DMR2
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","srifle_DMR_07_hex_F","Throw","Put"};
-			magazines[] = {"20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
-		};
-	
-		class DMR1
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","srifle_DMR_07_hex_F","Throw","Put"};
-			magazines[] = {"20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","20Rnd_650x39_Cased_Mag_F","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
-		};
-	
-		class SFB3
-		{
-		
-			uniform = "U_B_CTRG_Soldier_F";
-			weapons[] = {"Binocular","hgun_Pistol_heavy_01_F","arifle_MXC_Black_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","11Rnd_45ACP_Mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrierL_CTRG","H_HelmetB_TI_tna_F","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","ACE_NVG_Gen4"};
-		};
-	
-		class SFB2
-		{
-			
-			uniform = "U_B_CTRG_Soldier_F";
-			weapons[] = {"Binocular","hgun_Pistol_heavy_01_F","arifle_MXC_Black_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","11Rnd_45ACP_Mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrierL_CTRG","H_HelmetB_TI_tna_F","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","ACE_NVG_Gen4"};
-		};		
-		
-		class SFB1
-		{	
-			uniform = "U_B_CTRG_Soldier_F";
-			weapons[] = {"Binocular","hgun_Pistol_heavy_01_F","arifle_MXC_Black_F"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell","11Rnd_45ACP_Mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_PlateCarrierL_CTRG","H_HelmetB_TI_tna_F","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","ACE_NVG_Gen4"};
-		};
-	
-		class SFR3
-		{
-			uniform = "U_O_V_Soldier_Viper_hex_F";
-			backpack = "B_ViperHarness_ghex_F";
-			weapons[] = {"Binocular","arifle_ARX_hex_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","10Rnd_50BW_Mag_F","HandGrenade","SmokeShellRed"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","ACE_NVG_Gen4"};
-		};
-		
-		
-		class SFR2
-		{
-			uniform = "U_O_V_Soldier_Viper_hex_F";
-			backpack = "B_ViperHarness_ghex_F";
-			weapons[] = {"Binocular","arifle_ARX_hex_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","10Rnd_50BW_Mag_F","HandGrenade","SmokeShellRed"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","ACE_NVG_Gen4"};
-		};
-		
-		class SFR1
-		{
-			uniform = "U_O_V_Soldier_Viper_hex_F";
-			backpack = "B_ViperHarness_ghex_F";
-			weapons[] = {"Binocular","arifle_ARX_hex_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","10Rnd_50BW_Mag_F","HandGrenade","SmokeShellRed"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","ACE_NVG_Gen4"};
-		};
-	
-		class PilotB3
-		{
-			uniform = "U_B_HeliPilotCoveralls";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"SmokeShellBlue","SmokeShell","30Rnd_65x39_caseless_mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_BandollierB_oli","H_PilotHelmetHeli_B","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class PilotB2
-		{
-
-			uniform = "U_B_HeliPilotCoveralls";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"SmokeShellBlue","SmokeShell","30Rnd_65x39_caseless_mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_BandollierB_oli","H_PilotHelmetHeli_B","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class PilotB1
-		{
-			uniform = "U_B_HeliPilotCoveralls";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"SmokeShellBlue","SmokeShell","30Rnd_65x39_caseless_mag"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_BandollierB_oli","H_PilotHelmetHeli_B","G_Aviator","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class PilotR3
-		{
-			uniform = "U_O_PilotCoveralls";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"","H_PilotHelmetHeli_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
-		};
-	
-		class PilotR2
-		{
-			uniform = "U_O_PilotCoveralls";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"","H_PilotHelmetHeli_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
-		};
-	
-		class PilotR1
-		{
-			uniform = "U_O_PilotCoveralls";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"","H_PilotHelmetHeli_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
-		};
-		
-		class ATSpecialistB3
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_TacticalPack_oli";
-			weapons[] = {"Binocular","ATC_TITAN_AT_B","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Tactical_Clear","ItemMap","ItemCompass","ItemWatch","tf_anprc152_2","NVGoggles"};
-		};
-		
-		class ATSpecialistB2
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_TacticalPack_oli";
-			weapons[] = {"Binocular","ATC_TITAN_AT_B","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Tactical_Clear","ItemMap","ItemCompass","ItemWatch","tf_anprc152_2","NVGoggles"};
-		};
-	
-		class ATSpecialistB1
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_TacticalPack_oli";
-			weapons[] = {"Binocular","ATC_TITAN_AT_B","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Tactical_Clear","ItemMap","ItemCompass","ItemWatch","tf_anprc152_2","NVGoggles"};
-		};
-	
-		class ATSpecialistR3
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"ATC_TITAN_AT_O","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
-		};
-	
-		class ATSpecialistR2
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"ATC_TITAN_AT_O","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
-		};
-	
-		class ATSpecialistR1
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"ATC_TITAN_AT_O","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
-		};
-		
-		class AASpecialistB3
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_TacticalPack_oli";
-			weapons[] = {"Binocular","ATC_TITAN_AA_B","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class AASpecialistB2
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_TacticalPack_oli";
-			weapons[] = {"Binocular","ATC_TITAN_AA_B","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-		
-		class AASpecialistB1
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "B_TacticalPack_oli";
-			weapons[] = {"Binocular","ATC_TITAN_AA_B","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_camo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class AASpecialistR3
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"ATC_TITAN_AA_O","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
-		};
-	
-		class AASpecialistR2
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"ATC_TITAN_AA_O","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
-		};
-	
-		class AASpecialistR1
-		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "B_FieldPack_ocamo";
-			weapons[] = {"ATC_TITAN_AA_O","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
-		};
+		////////////////////////////////////////////////////////////SNIPER
 		
 		class SniperB3
 		{
-			uniform = "U_B_FullGhillie_sard";
-			backpack = "";
-			weapons[] = {"Binocular","hgun_Pistol_heavy_01_F","srifle_DMR_02_camo_F","Throw","Put"};
-			magazines[] = {"10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","HandGrenade","SmokeShellBlue","SmokeShell","11Rnd_45ACP_Mag"};
+			weapons[] = {"srifle_DMR_02_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_TacVest_oli","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_4","NVGoggles"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_LRPS","RH_peq15b","RH_HBLM","muzzle_snds_338_black","muzzle_snds_L",""};
+			uniformClass = "U_I_FullGhillie_sard";
 		};
 	
 		class SniperB2
 		{
-			uniform = "U_B_FullGhillie_sard";
-			backpack = "";
-			weapons[] = {"Binocular","hgun_Pistol_heavy_01_F","srifle_DMR_02_camo_F","Throw","Put"};
-			magazines[] = {"10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","HandGrenade","SmokeShellBlue","SmokeShell","11Rnd_45ACP_Mag"};
+			weapons[] = {"srifle_DMR_02_F","hgun_P07_F","Binocular"};
+            magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","smokeshellblue","SmokeShell"};			
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_TacVest_oli","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_4","NVGoggles"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_LRPS","RH_peq15b","RH_HBLM","muzzle_snds_338_black","muzzle_snds_L"};
+			uniformClass = "U_I_FullGhillie_sard";
 		};
 	
 		class SniperB1
 		{
-			uniform = "U_B_FullGhillie_sard";
-			backpack = "";
-			weapons[] = {"Binocular","hgun_Pistol_heavy_01_F","srifle_DMR_02_camo_F","Throw","Put"};
-			magazines[] = {"10Rnd_338_Mag","10Rnd_338_Mag","10Rnd_338_Mag","HandGrenade","SmokeShellBlue","SmokeShell","11Rnd_45ACP_Mag"};
+			weapons[] = {"arifle_SPAR_03_blk_F","hgun_P07_F","Binocular"};
+            magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","smokeshellblue","SmokeShell"};			
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_TacVest_oli","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_4","NVGoggles"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM","muzzle_snds_B","muzzle_snds_L"};
+			uniformClass = "U_I_FullGhillie_sard";
 		};
 	
 		class SniperR3
 		{
-			uniform = "U_O_FullGhillie_ard";
-			backpack = "";
-			weapons[] = {"Binocular","srifle_DMR_05_tan_f","Throw","Put"};
-			magazines[] = {"10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","HandGrenade","SmokeShellRed","SmokeShell"};
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","smokeshellred","SmokeShell"};			
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_TacVest_khk","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
+			linkedItems[] = {"V_TacChestrig_cbr_F","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","optic_LRPS","RH_peq15","RH_HBLM_des","muzzle_snds_93mmg_tan","muzzle_snds_L"};
+			uniformClass = "U_O_FullGhillie_sard";
 		};
 	
 		class SniperR2
 		{
-			uniform = "U_O_FullGhillie_ard";
-			backpack = "";
-			weapons[] = {"Binocular","srifle_DMR_05_tan_f","Throw","Put"};
-			magazines[] = {"10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","HandGrenade","SmokeShellRed","SmokeShell"};
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","smokeshellred","SmokeShell"};			
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_TacVest_khk","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
+			linkedItems[] = {"V_TacChestrig_cbr_F","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","optic_LRPS","RH_peq15","RH_HBLM_des","muzzle_snds_93mmg_tan","muzzle_snds_L"};
+			uniformClass = "U_O_FullGhillie_sard";
 		};
-		
+	
 		class SniperR1
 		{
-			uniform = "U_O_FullGhillie_ard";
-			backpack = "";
-			weapons[] = {"Binocular","srifle_DMR_05_tan_f","Throw","Put"};
-			magazines[] = {"10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","HandGrenade","SmokeShellRed","SmokeShell"};
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","smokeshellred","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard"};
-			linkedItems[] = {"V_TacVest_khk","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_1","NVGoggles_OPFOR"};
+			linkedItems[] = {"V_TacChestrig_cbr_F","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","optic_AMS","RH_peq15b","RH_HBLM"};
+			uniformClass = "U_O_FullGhillie_sard";
 		};
+		
+		////////////////////////////////////////////////////////////SPOTTER
 		
 		class SpotterB3
 		{
-			uniform = "U_B_FullGhillie_sard";
-			backpack = "tf_rt1523g";
-			weapons[] = {"ACE_Vector","hgun_Pistol_heavy_01_F","arifle_MX_GL_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_Kestrel4500","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_oli","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_DAGR","ACE_Kestrel4500","ACE_ATragMX"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_DMS","RH_peq15b","RH_HBLM","muzzle_snds_H","muzzle_snds_L"};
+			uniformClass = "U_I_FullGhillie_sard";
 		};
-		
+	
 		class SpotterB2
 		{
-			uniform = "U_B_FullGhillie_sard";
-			backpack = "tf_rt1523g";
-			weapons[] = {"ACE_Vector","hgun_Pistol_heavy_01_F","arifle_MX_GL_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_Kestrel4500","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_oli","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_DAGR","ACE_Kestrel4500","ACE_ATragMX"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_DMS","RH_peq15b","RH_HBLM","muzzle_snds_H","muzzle_snds_L"};
+			uniformClass = "U_I_FullGhillie_sard";
 		};
-		
+	
 		class SpotterB1
 		{
-			uniform = "U_B_FullGhillie_sard";
-			backpack = "tf_rt1523g";
-			weapons[] = {"ACE_Vector","hgun_Pistol_heavy_01_F","arifle_MX_GL_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_Kestrel4500","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_oli","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_DAGR","ACE_Kestrel4500","ACE_ATragMX"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b","RH_HBLM","muzzle_snds_L"};
+			uniformClass = "U_I_FullGhillie_sard";
 		};
 	
 		class SpotterR3
 		{
-			uniform = "U_O_FullGhillie_ard";
-			backpack = "tf_mr3000";
-			weapons[] = {"ACE_Vector","arifle_CTAR_GL_blk_F","Throw","Put"};
-			magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_Kestrel4500","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_khk","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_DAGR","ACE_Kestrel4500","ACE_ATragMX"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_DMS","RH_peq15b","RH_HBLM","muzzle_snds_H","muzzle_snds_L"};
+			uniformClass = "U_O_FullGhillie_sard";
 		};
 	
 		class SpotterR2
 		{
-			uniform = "U_O_FullGhillie_ard";
-			backpack = "tf_mr3000";
-			weapons[] = {"ACE_Vector","arifle_CTAR_GL_blk_F","Throw","Put"};
-			magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_Kestrel4500","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_khk","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","10Rnd_93x64_DMR_05_Mag","smokeshellred","SmokeShell"};			
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_DAGR","ACE_Kestrel4500","ACE_ATragMX"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","optic_DMS","RH_peq15b","RH_HBLM","muzzle_snds_H","muzzle_snds_L"};
+			uniformClass = "U_O_FullGhillie_sard";
 		};
 	
 		class SpotterR1
 		{
-			uniform = "U_O_FullGhillie_ard";
-			backpack = "tf_mr3000";
-			weapons[] = {"ACE_Vector","arifle_CTAR_GL_blk_F","Throw","Put"};
-			magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_Kestrel4500","ACE_microDAGR"};
-			linkedItems[] = {"V_TacVest_khk","","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
-		};
-
-		class CrewmanB3
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_TacVest_oli","H_HelmetCrew_B","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
-		};
-	
-		class CrewmanB2
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_TacVest_oli","H_HelmetCrew_B","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
+			weapons[] = {"srifle_DMR_03_tan_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","20Rnd_762x51_Mag","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_RangeCard","ACE_DAGR","ACE_Kestrel4500","ACE_ATragMX"};
+			linkedItems[] = {"V_TacChestrig_oli_F","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15","RH_HBLM_des","muzzle_snds_H","muzzle_snds_L"};
+			uniformClass = "U_O_FullGhillie_sard";
 		};
 		
-		class CrewmanB1
+		////////////////////////////////////////////////////////////COMMANDER
+		
+		class CommanderB3
 		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_TacVest_oli","H_HelmetCrew_B","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_3","NVGoggles"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
 		};
 	
-		class CrewmanR3
+		class CommanderB2
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_HarnessO_brn","H_HelmetCrew_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
 		};
 	
-		class CrewmanR2
+		class CommanderB1
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_HarnessO_brn","H_HelmetCrew_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_MX_Black_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
 		};
 	
-		class CrewmanR1
+		class CommanderR3
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_HarnessO_brn","H_HelmetCrew_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
 		};
 	
+		class CommanderR2
+		{
+			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+	
+		class CommanderR1
+		{
+			weapons[] = {"arifle_Katiba_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+		
+		////////////////////////////////////////////////////////////MEDIC
+		
+		class MedicB3
+		{	
+		    weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr_Medic";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};			
+		};
+	
+		class MedicB2
+		{
+		    weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr_Medic";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};		
+		};
+	
+		class MedicB1
+		{		
+		    weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "B_AssaultPack_rgr_Medic";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};				
+		};
+	
+		class MedicR3
+		{
+			weapons[] = {"arifle_Katiba_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_FieldPack_ocamo_Medic";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};				
+		};
+	
+		class MedicR2
+		{
+			weapons[] = {"arifle_Katiba_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_FieldPack_ocamo_Medic";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};		
+		};
+	
+		class MedicR1
+		{
+			weapons[] = {"arifle_Katiba_F","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "B_FieldPack_ocamo_Medic";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","Medikit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit","FirstAidKit"};			
+		};
+		
+		////////////////////////////////////////////////////////////ENGINEER
+		
 		class EngineerB3
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g_big";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_TacVest_oli","H_Cap_headphones","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_4","NVGoggles"};
+		{	
+		    weapons[] = {"arifle_MX_Black_F","ACE_VMH3","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ToolKit"};			
 		};
 	
 		class EngineerB2
 		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g_big";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_TacVest_oli","H_Cap_headphones","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_4","NVGoggles"};
+		    weapons[] = {"arifle_MX_Black_F","ACE_VMH3","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ToolKit"};		
 		};
 	
 		class EngineerB1
-		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "tf_rt1523g_big";
-			weapons[] = {"Binocular","arifle_MXC_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_TacVest_oli","H_Cap_headphones","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_4","NVGoggles"};
+		{		
+		    weapons[] = {"arifle_MX_Black_F","ACE_VMH3","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ToolKit"};					
 		};
 	
 		class EngineerR3
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_HarnessO_brn","H_HelmetCrew_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_Katiba_F","ACE_VMH3","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ToolKit"};				
 		};
 	
 		class EngineerR2
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_HarnessO_brn","H_HelmetCrew_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_Katiba_F","ACE_VMH3","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ToolKit"};		
 		};
 	
 		class EngineerR1
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_C_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
+			weapons[] = {"arifle_Katiba_F","ACE_VMH3","ACE_Vector"};
+			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","handgrenade","smokeshellred","SmokeShell"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ToolKit"};			
+		};
+
+		
+		////////////////////////////////////////////////////////////CREWMAN	
+		
+		class CrewmanB3
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetCrew_I","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class CrewmanB2
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetCrew_I","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class CrewmanB1
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetCrew_I","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class CrewmanR3
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","H_Tank_black_F","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		class CrewmanR2
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","H_Tank_black_F","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		class CrewmanR1
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","H_Tank_black_F","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		////////////////////////////////////////////////////////////PILOT
+		
+		class PilotB3
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "U_B_HeliPilotCoveralls";
+		};
+	
+		class PilotB2
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "U_B_HeliPilotCoveralls";
+		};
+	
+		class PilotB1
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "U_B_HeliPilotCoveralls";
+		};
+	
+		class PilotR3
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "U_O_PilotCoveralls";
+		};
+	
+		class PilotR2
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "U_O_PilotCoveralls";
+		};
+	
+		class PilotR1
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","H_PilotHelmetHeli_B","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "U_O_PilotCoveralls";
+		};
+		
+		////////////////////////////////////////////////////////////PARA' RIFLEMAN
+		
+		class ParaRiflemanB3
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
-			linkedItems[] = {"V_HarnessO_brn","H_HelmetCrew_O","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_3","NVGoggles_OPFOR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
-		class MortarmanB3
+		class ParaRiflemanB2
 		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR","ACE_RangeTable_82mm","ACE_Kestrel4500"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_snakeskin","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
-		class MortarmanB2
+		class ParaRiflemanB1
 		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR","ACE_RangeTable_82mm","ACE_Kestrel4500"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_snakeskin","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
 		};
 	
-		class MortarmanB1
+		class ParaRiflemanR3
 		{
-			uniform = "U_B_CombatUniform_mcam";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_MX_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","HandGrenade","SmokeShellBlue","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR","ACE_RangeTable_82mm","ACE_Kestrel4500"};
-			linkedItems[] = {"V_PlateCarrier1_rgr","H_HelmetB_snakeskin","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_anprc152_2","NVGoggles"};
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 	
-		class MortarmanR3
+		class ParaRiflemanR2
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR","ACE_RangeTable_82mm","ACE_Kestrel4500"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
 		};
 	
-		class MortarmanR2
+		class ParaRiflemanR1
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR","ACE_RangeTable_82mm","ACE_Kestrel4500"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","Binocular"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+		};
+		
+		////////////////////////////////////////////////////////////PARA' TEAMLEADER
+		class ParaTeamLeaderB3
+		{
+			weapons[] = {"arifle_SPAR_01_GL_blk_F","ACE_Vector"};
+			magazines[] = {"30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
 		};
 	
-		class MortarmanR1
+		class ParaTeamLeaderB2
 		{
-			uniform = "U_O_CombatUniform_ocamo";
-			backpack = "";
-			weapons[] = {"Binocular","arifle_Katiba_F","Throw","Put"};
-			magazines[] = {"30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","30Rnd_65x39_caseless_green","HandGrenade","SmokeShellRed","SmokeShell"};
-			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR","ACE_RangeTable_82mm","ACE_Kestrel4500"};
-			linkedItems[] = {"V_I_G_resistanceLeader_F","H_HelmetO_ocamo","G_Tactical_Clear","ItemMap","ItemCompass","tf_microdagr","tf_fadak_2","NVGoggles_OPFOR"};
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
 		};
+		
+		class ParaTeamLeaderB1
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","hgun_P07_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+			backpack = "TFAR_rt1523g_big_rhs";
+		};
+	
+		class ParaTeamLeaderR3
+		{
+			weapons[] = {"arifle_CTAR_GL_hex_F","ACE_Vector"};
+			magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+		
+		class ParaTeamLeaderR2
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+	
+		class ParaTeamLeaderR1
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","hgun_Rook40_F","ACE_Vector"};
+			magazines[] = {"16Rnd_9x21_Mag","16Rnd_9x21_Mag","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+			backpack = "TFAR_mr3000";
+		};
+		
+		////////////////////////////////////////////////////////////PARA' GRENADIER		
+		
+		class ParaGrenadierB3
+		{
+			weapons[] = {"arifle_SPAR_01_GL_blk_F","Binocular"};
+			magazines[] = {"30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+		};
+		
+		class ParaGrenadierB2
+		{
+			weapons[] = {"arifle_SPAR_01_GL_blk_F","Binocular"};
+			magazines[] = {"30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class ParaGrenadierB1
+		{
+			weapons[] = {"arifle_SPAR_01_GL_blk_F","Binocular"};
+			magazines[] = {"30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class ParaGrenadierR3
+		{
+			weapons[] = {"arifle_CTAR_GL_hex_F","Binocular"};
+			magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+		};
+		
+		class ParaGrenadierR2
+		{
+			weapons[] = {"arifle_CTAR_GL_hex_F","Binocular"};
+			magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		class ParaGrenadierR1
+		{
+			weapons[] = {"arifle_CTAR_GL_hex_F","Binocular"};
+			magazines[] = {"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_Smoke_Grenade_shell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotexps3_tan","RH_peq15"};
+			uniformClass = "Uniform_CSAT";
+		};
+		
+        ////////////////////////////////////////////////////////////PARA' AUTOMATIC RIFLEMAN			
+		
+		class ParaAutoriflemanB3
+		{
+			weapons[] = {"arifle_SPAR_02_blk_F","Binocular"};
+			magazines[] = {"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";	
+		};
+	
+		class ParaAutoriflemanB2
+		{
+			weapons[] = {"arifle_SPAR_02_blk_F","Binocular"};
+			magazines[] = {"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";	
+		};
+	
+		class ParaAutoriflemanB1
+		{
+			weapons[] = {"arifle_SPAR_02_blk_F","Binocular"};
+			magazines[] = {"200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","200Rnd_65x39_cased_Box","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotech553_tan","RH_peq15","RH_TD_ACB_b"};
+			uniformClass = "Uniform_ATACS";	
+		};
+		
+		class ParaAutoriflemanR3
+		{
+			weapons[] = {"arifle_CTARS_hex_F","Binocular"};
+			magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b"};
+			uniformClass = "Uniform_CSAT";
+		};
+		
+		class ParaAutoriflemanR2
+		{
+			weapons[] = {"arifle_CTARS_hex_F","Binocular"};
+			magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		class ParaAutoriflemanR1
+		{
+			weapons[] = {"arifle_CTARS_hex_F","Binocular"};
+			magazines[] = {"150Rnd_762x54_Box","150Rnd_762x54_Box","150Rnd_762x54_Box","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs"};
+			linkedItems[] = {"V_TacVest_khk","Helmet_CSAT","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","RH_eotech553","RH_peq15b"};
+			uniformClass = "Uniform_CSAT";
+		};
+		
+		
+		////////////////////////////////////////////////////////////SPECIAL FORCES			
+		
+		class SFB3
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","ATC_Laserdesignator_B"};
+			magazines[] = {"Laserbatteries","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacChestrig_oli_F","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_ta01nsn_2D","RH_peq15b","muzzle_snds_M"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class SFB2
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","ATC_Laserdesignator_B"};
+			magazines[] = {"Laserbatteries","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacChestrig_oli_F","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b","muzzle_snds_M"};
+			uniformClass = "Uniform_ATACS";
+		};
+		
+		class SFB1
+		{
+			weapons[] = {"arifle_SPAR_01_blk_F","ATC_Laserdesignator_B"};
+			magazines[] = {"Laserbatteries","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","30Rnd_556x45_Stanag_red","handgrenade","smokeshellblue","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacChestrig_oli_F","H_Booniehat_oli","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b","muzzle_snds_M"};
+			uniformClass = "Uniform_ATACS";
+		};
+	
+		class SFR3
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","ATC_Laserdesignator_O"};
+			magazines[] = {"Laserbatteries","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F",,"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacChestrig_cbr_F","H_Booniehat_khk_hs","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15","muzzle_snds_58_blk_F"};
+			uniformClass = "Uniform_CSAT";
+		};
+		
+		class SFR2
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","ATC_Laserdesignator_O"};
+			magazines[] = {"Laserbatteries","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F",,"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacChestrig_cbr_F","H_Booniehat_khk_hs","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15","muzzle_snds_58_blk_F"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
+		class SFR1
+		{
+			weapons[] = {"arifle_CTAR_Hex_F","ATC_Laserdesignator_O"};
+			magazines[] = {"Laserbatteries","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F",,"30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","30Rnd_580x42_Mag_F","handgrenade","smokeshellred","SmokeShell"};
+			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
+			linkedItems[] = {"V_TacChestrig_cbr_F","H_Booniehat_khk_hs","ItemMap","ItemCompass","ItemWatch","tf_fadak","ACE_NVG_Gen4","ACE_optic_Arco_2D","RH_peq15","muzzle_snds_58_blk_F"};
+			uniformClass = "Uniform_CSAT";
+		};
+	
 };
-	
-	
-	
-	
-	
-	
-	
-	
-	

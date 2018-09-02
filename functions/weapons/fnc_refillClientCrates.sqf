@@ -13,81 +13,68 @@ private ["_magazines", "_weaponItems", "_allMagazines", "_allAttachment","_Allow
 _arg_unit = _this;
 
 _inventory = _arg_unit getVariable ["inventory2",[]];
-
-_magazines = [];
-_weaponItems = [];
-_AllowedAttachments = [];
-_sideAllowedAdditionalAmmo = [];
-_sideAllowedWeapons = [];
+_PossInvData = ["allowedItems","weapons","allowedAmmo"];
 _sideAllowedItems = [];
-
+_sideAllowedWeapons = [];
+_sideAllowedAdditionalAmmo = [];
+_weaponItems = [];
 
 {
-	_configClass = _x;
-	_subclassesPaths = configProperties [missionconfigfile >> "AllowedCachesGear" >> _x, "true", true];
+	_class = _x;
 	
 	{
-	
-		_subclasses = [_x,[],true] call BIS_fnc_configPath; 
-		_subclasses = _subclasses - ["missionConfigFile","AllowedCachesGear",_configClass];
-	
+		_data = [missionConfigFile >> "AllowedCachesGear" >> _class >> _x] call BIS_fnc_getCfgData;
+		
+		if (isNil "_data") exitWith {};
+		
+		switch (_x) do
 		{
-			_subclass = _x;
-			
-			switch (_subclass) do
+			case "weapons":		
 			{
-				case "weapons":
 				{
-					_arrayofweapons = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
-					{ _sideAllowedWeapons pushBackUnique _x} forEach _arrayofweapons;
-				};
+					if (_x == primaryWeapon player) then 
+					{
 				
-				case "optics":
-				{
-					_arrayofoptics = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
-					{ _AllowedAttachments pushBackUnique _x} forEach _arrayofoptics;
-				};
+						_allMagazines = getArray (configFile >> "CfgWeapons" >> _x >> "magazines");
+						_allAttachment = [_x] call CBA_fnc_compatibleItems;
+						
+						_optics = [missionConfigFile >> "AllowedCachesGear" >> _class >> "optics" ] call BIS_fnc_getCfgDataArray;
+						_muzzle = [missionConfigFile >> "AllowedCachesGear" >> _class >> "muzzle"] call BIS_fnc_getCfgDataArray;
+						_pointers = [missionConfigFile >> "AllowedCachesGear" >> _class >> "pointers"] call BIS_fnc_getCfgDataArray;
+						
+						_AllowedAttachments = [];
+						{{_AllowedAttachments pushBackUnique _x} forEach _x} forEach [_optics,_pointers,_muzzle];  
+						
+						_weaponItems = _weaponItems + (_allAttachment - (_allAttachment - _AllowedAttachments));
+					};
 				
-				case "pointers":
-				{
-					_arrayofpointers = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
-					{ _AllowedAttachments pushBackUnique _x} forEach _arrayofpointers;
-				};
-				
-				case "muzzle":
-				{
-					_arrayofmuzzle = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
-					{ _AllowedAttachments pushBackUnique _x} forEach _arrayofmuzzle;
-				};
-				
-				case "allowedAmmo":
-				{
-					_arrayofallowedAmmo = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
-					{ _sideAllowedAdditionalAmmo pushBackUnique _x} forEach _arrayofallowedAmmo;
-				};
-				
-				case "allowedItems":
-				{
-					_arrayofallowedItems = getArray (missionConfigFile >> "AllowedCachesGear" >> _configClass >> _x);
-					{ _sideAllowedItems pushBackUnique _x} forEach _arrayofallowedItems;
-				};
+				_sideAllowedWeapons pushBackUnique _x;
+			
+				} forEach _data;
 			};
 			
-		}forEach _subclasses;
-			
-	} forEach _subclassesPaths;
+			case "allowedAmmo":
+			{
+				{
+					_sideAllowedAdditionalAmmo pushBackUnique _x;
+				} forEach _data;
+			};
+					
 				
-} forEach [_inventory select 0,_inventory select 1];
-
-{
-    _allMagazines = getArray (configFile >> "CfgWeapons" >> _x >> "magazines");
-    _allAttachment = [_x] call CBA_fnc_compatibleItems;
-
-    _weaponItems = _weaponItems + (_allAttachment - (_allAttachment - _AllowedAttachments));
-
-} forEach (weapons _arg_unit);
+			case default
+			{
+				{
+				_sideAllowedItems pushbackUnique _x;
+				} forEach _data;
+			};
+		};
+		
+	} forEach _PossInvData;
+	
+} forEach _inventory;
 
 _magazines = _allmagazines + _sideAllowedAdditionalAmmo; 
+_sideAllowedWeapons = _sideAllowedWeapons - ["ATC_TITAN_AA_starter"];
 
 [ATC_weaponsCrate, _sideAllowedWeapons ] call ATC_fnc_fillCrate;
 [ATC_ammoCrate, _magazines] call ATC_fnc_fillCrate;

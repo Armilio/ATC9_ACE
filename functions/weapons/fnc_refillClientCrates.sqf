@@ -71,7 +71,7 @@ _weaponItems = [];
 		
 	} forEach _PossInvData;
 	
-} forEach _inventory;
+} forEach [_inventory select 0,_inventory select 1];
 
 _magazines = _allmagazines + _sideAllowedAdditionalAmmo; 
 _sideAllowedWeapons = _sideAllowedWeapons - ["ATC_TITAN_AA_starter"];

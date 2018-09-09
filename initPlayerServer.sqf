@@ -99,8 +99,12 @@ if (_isJIP) then
 	
 	if (_level > 0) then
 	{
-		_JIPlayerThis setVariable ["level",_level,false];
+		[_JIPlayerThis,["level",3,false]] remoteExec ["setVariable",_JIPlayerThis,false];
 	};
+}
+else
+{
+	[_JIPlayerThis,["level",3,false]] remoteExec ["setVariable",_JIPlayerThis,false];
 };
 
 

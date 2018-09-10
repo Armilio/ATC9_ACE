@@ -26,13 +26,19 @@
 		case ("str_b_soldier_at_f0" call BIS_fnc_localize):
 		{
 			//Specialista Missili (AC) (NATO(Uomini))
-			_class = "ATSpecialist";
+			_class = "SpecAT";
 		};
 		
 		case ("str_b_soldier_aa_f0" call BIS_fnc_localize):
 		{
 			//Specialista Missili (AA) (NATO(Uomini))
-			_class = "AASpecialist";
+			_class = "SpecAA";
+		};
+		
+		case ("str_b_soldier_aat_f0" call BIS_fnc_localize):
+		{
+			//Assistente AT (NATO(Uomini))
+			_class = "SpecAss";
 		};
 		
 		case ("str_a3_cfgvehicles_o_heavygunner_f0" call BIS_fnc_localize):

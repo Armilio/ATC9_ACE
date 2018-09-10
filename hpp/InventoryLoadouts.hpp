@@ -479,7 +479,7 @@ class CfgRespawnInventory
 		
 		////////////////////////////////////////////////////////////SPEC_AA
 		
-		class SSpecAAB3
+		class SpecAAB3
 		{
 			weapons[] = {"arifle_MXC_Black_F","ATC_TITAN_AA_B","Binocular"};
 			magazines[] = {"Titan_AA","Titan_AA","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};

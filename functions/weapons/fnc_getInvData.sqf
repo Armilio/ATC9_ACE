@@ -5,7 +5,7 @@ private ["_unit","_invData","_PossInvData","_items"];
 
 _unit = _this;
 _invData = _unit getVariable "inventory2";
-_PossInvData = ["allowedItems","weapons","optics","pointers","allowedAmmo","muzzle"];
+_PossInvData = ["allowedItems","weapons","optics","pointers","allowedAmmo","muzzle","canTake"];
 _items = [];
 ATC_ClassWeapons = [];
 ATC_ClassAttachments = [];
@@ -57,6 +57,11 @@ ATC_ClassAllowedItems = [];
 				};
 
 				case "allowedItems":
+				{
+					{_items pushBackUnique _x} forEach _data;
+				};
+				
+				case "canTake":
 				{
 					{_items pushBackUnique _x} forEach _data;
 				};

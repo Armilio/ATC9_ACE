@@ -23,7 +23,7 @@ _items = [];
 } forEach (uniformItems _arg_unit + vestItems _arg_unit + backpackItems _arg_unit);
 
 
-_items pushBackUnique (backpack _arg_unit)
+_items pushBackUnique (backpack _arg_unit);
 
 
 /*{

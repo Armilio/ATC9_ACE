@@ -29,6 +29,8 @@ if (!isDedicated) then {
             ATC_ammoCrate = ["Box_FIA_Ammo_F", "mrk_ammoCrateA"] call ATC_fnc_createCrate;
             ATC_weaponItemsCrate = ["Box_FIA_Ammo_F", "mrk_weaponItemsCrateA"] call ATC_fnc_createCrate;
             ATC_itemsCrate = ["Box_FIA_Ammo_F", "mrk_itemsCrateA"] call ATC_fnc_createCrate;
+	    ATC_BackpacksCrate = ["Box_FIA_Ammo_F", "mrk_BackpacksCrateA"] call ATC_fnc_createCrate;
+	    
 			
 			/*ATC_VACrate1 = ["Box_FIA_Ammo_F", "mrk_VACrate"] call ATC_fnc_createCrate;
 			ATC_VACrate1 setVehicleVarName "ATC_VACrate";
@@ -56,7 +58,8 @@ if (!isDedicated) then {
             ATC_weaponsCrate = ["Box_FIA_Wps_F", "mrk_weaponCrateB"] call ATC_fnc_createCrate;
             ATC_ammoCrate = ["Box_FIA_Ammo_F", "mrk_ammoCrateB"] call ATC_fnc_createCrate;
             ATC_weaponItemsCrate = ["Box_FIA_Ammo_F", "mrk_weaponItemsCrateB"] call ATC_fnc_createCrate;
-            ATC_itemsCrate = ["Box_FIA_Ammo_F", "mrk_itemsCrateB"] call ATC_fnc_createCrate;     
+            ATC_itemsCrate = ["Box_FIA_Ammo_F", "mrk_itemsCrateB"] call ATC_fnc_createCrate;
+	    ATC_BackpacksCrate = ["Box_FIA_Ammo_F", "mrk_BackpacksCrateB"] call ATC_fnc_createCrate;
 
         };
     };

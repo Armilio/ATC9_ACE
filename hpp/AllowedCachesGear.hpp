@@ -28,6 +28,8 @@ class AllowedCachesGear
 							  "V_TacVest_oli", "V_TacChestrig_oli_F", //Vest
 							  "ACE_Flashlight_MX991","ACE_MapTools","ACE_wirecutter","ACE_EarPlugs","ACE_Flashlight","ACE_IR_Strobe_Item","ItemMap","ItemCompass","ItemWatch","tf_fadak","FirstAidKit","ACE_NVG_Gen4","Binocular"
 							  };
+			backpack[] = {"TFAR_rt1523g_big_rhs","B_AssaultPack_rgr","B_Kitbag_rgr","B_AssaultPack_rgr_Medic","B_TacticalPack_mcamo","B_Carryall_mcamo","ACE_TacticalLadder_Pack"};
+			canTake[] = {"B_Mortar_01_support","B_Mortar_01_weapon","B_HMG_01_high_weapon_F","B_HMG_01_support_F","B_HMG_01_support_high_F","Titan_AA","Titan_AT","Titan_AP"};
 		};
 		
 		class CommonR
@@ -58,38 +60,46 @@ class AllowedCachesGear
 							  "V_TacVest_khk", "V_TacChestrig_cbr_F", //Vest
 							  "ACE_Flashlight_MX991","ACE_MapTools","ACE_wirecutter","ACE_EarPlugs","ACE_Flashlight","ACE_IR_Strobe_Item","ItemMap","ItemCompass","ItemWatch","tf_fadak","FirstAidKit","ACE_NVG_Gen4","Binocular"
 							  };
+			backpack[] = {"TFAR_mr3000","B_AssaultPack_cbr","B_Kitbag_cbr","B_FieldPack_ocamo_Medic","B_TacticalPack_ocamo","B_Carryall_ocamo","ACE_TacticalLadder_Pack"};
+			canTake[] = {"O_Mortar_01_support","O_Mortar_01_weapon","O_HMG_01_high_weapon_F","O_HMG_01_support_F","O_HMG_01_support_high_F","Titan_AA","Titan_AT","Titan_AP"};
 		};
 		
 		////////////////////////////////////////////////////////////RIFLEMAN
 		
-		class RiflemanB3 {		
-		optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
-		weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_417","ATC_EBR"};
-		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};	
+		class RiflemanB3 
+		{		
+			optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
+			weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_417","ATC_EBR"};
+			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};	
 		};
 		
-		class RiflemanB2 {		
-		weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_417","ATC_EBR"};
-		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
+		class RiflemanB2 
+		{		
+			weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_417","ATC_EBR"};
+			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
 		};
 		
-		class RiflemanB1 {
-	    weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
+		class RiflemanB1 
+		{
+	   		weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
 		};
 		
-		class RiflemanR3 {		
-		optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag_tan", "RH_eothhs1_tan", "RH_m145"};
-		weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_AK12","ATC_SIG"};
-		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};		
+		class RiflemanR3 
+		{		
+			optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag_tan", "RH_eothhs1_tan", "RH_m145"};
+			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_AK12","ATC_SIG"};
+			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};		
 		};
 		
-		class RiflemanR2 {		
-		weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_AK12","ATC_SIG"};	
-        muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};			
+		class RiflemanR2 
+		{		
+			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_AK12","ATC_SIG"};	
+        		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};			
 		};
 		
-		class RiflemanR1 {
-		weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
+		class RiflemanR1 
+		{
+			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
 		};
 		
 		////////////////////////////////////////////////////////////TEAMLEADER
@@ -104,14 +114,14 @@ class AllowedCachesGear
 		
 		class TeamLeaderB2
 		{
-		weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};	
-		allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};	
+			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
 		};
 		
 		class TeamLeaderB1
 		{
-		weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};	
-        allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};	
+        		allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
 		};
 				
 		class TeamLeaderR3
@@ -124,14 +134,14 @@ class AllowedCachesGear
 		
 		class TeamLeaderR2
 		{
-		weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
-		allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
+			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
 		};
 		
 		class TeamLeaderR1
 		{
-		weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
-        allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
+        		allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
 		};
 		
 		////////////////////////////////////////////////////////////GRENADIER
@@ -308,27 +318,27 @@ class AllowedCachesGear
 				
 		class RiflemanATB2
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F"};
 		};
 		
 		class RiflemanATB1
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F"};
 		};
 		
 		class RiflemanATR3
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
 		};
 				
 		class RiflemanATR2
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
 		};
 		
 		class RiflemanATR1
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
 		};
 		
 		////////////////////////////////////////////////////////////SPEC_AT
@@ -340,27 +350,27 @@ class AllowedCachesGear
 				
 		class SpecATB2
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F","launch_O_Vorona_green_F","ATC_TITAN_AT_B"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F","launch_O_Vorona_green_F","ATC_TITAN_AT_B"};
 		};
 		
 		class SpecATB1
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","launch_MRAWS_olive_rail_F"};
 		};
 		
 		class SpecATR3
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F","launch_O_Vorona_brown_F","ATC_TITAN_AT_O"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F","launch_O_Vorona_brown_F","ATC_TITAN_AT_O"};
 		};
 				
 		class SpecATR2
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F","launch_O_Vorona_brown_F","ATC_TITAN_AT_O"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F","launch_O_Vorona_brown_F","ATC_TITAN_AT_O"};
 		};
 		
 		class SpecATR1
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","launch_MRAWS_sand_rail_F"};
 		};
 		
 		////////////////////////////////////////////////////////////SPEC_AA
@@ -371,27 +381,27 @@ class AllowedCachesGear
 				
 		class SpecAAB2
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_TITAN_AA_B"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_TITAN_AA_B"};
 		};
 		
 		class SpecAAB1
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_TITAN_AA_B"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ATC_TITAN_AA_B"};
 		};
 		
 		class SpecAAR3
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_TITAN_AA_O"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_TITAN_AA_O"};
 		};
 				
 		class SpecAAR2
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_TITAN_AA_O"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_TITAN_AA_O"};
 		};
 		
 		class SpecAAR1
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_TITAN_AA_O"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ATC_TITAN_AA_O"};
 		};
 		
 		////////////////////////////////////////////////////////////SPEC_EXP
@@ -399,47 +409,47 @@ class AllowedCachesGear
 		{
 			weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ACE_VMH3"};
 			allowedAmmo[] = {"ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
-		    allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
+		    	allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
 			muzzle[] = {"muzzle_snds_M","muzzle_snds_acp","muzzle_snds_L"};
 		};
 				
 		class SpecExpB2
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ACE_VMH3"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ACE_VMH3"};
 			allowedAmmo[] = {"ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
-		    allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
+		    	allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
 			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
 		};
 		
 		class SpecExpB1
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ACE_VMH3"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F","ACE_VMH3"};
 			allowedAmmo[] = {"ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
-		    allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
+		    	allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
 			muzzle[] = {"muzzle_snds_L"};
 		};
 		
 		class SpecExpR3
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ACE_VMH3"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ACE_VMH3"};
 			allowedAmmo[] = {"ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
-		    allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
+		    	allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
 			muzzle[] = {"muzzle_snds_58_blk_F","muzzle_snds_acp","muzzle_snds_L"};
 		};
 				
 		class SpecExpR2
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ACE_VMH3"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ACE_VMH3"};
 			allowedAmmo[] = {"ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
-		    allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
+		    	allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
 			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
 		};
 		
 		class SpecExpR1
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ACE_VMH3"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F","ACE_VMH3"};
 			allowedAmmo[] = {"ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
-		    allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
+			allowedItems[] = {"ACE_Clacker","ACE_DefusalKit"};
 			muzzle[] = {"muzzle_snds_L"};
 		};
 		
@@ -448,36 +458,42 @@ class AllowedCachesGear
 		{
 			weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
 			allowedItems[] = {"ACE_microDAGR", "ACE_DAGR", "ACE_Vector"};
+			backpack[] = {"B_Bergen_tna_f"};
 		};
 				
 		class SpecAssB2
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			backpack[] = {"B_Bergen_tna_f"};
 		};
 		
 		class SpecAssB1
 		{
-	        weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
+	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			backpack[] = {"B_Bergen_tna_f"};
 		};
 		
 		class SpecAssR3
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
 			allowedItems[] = {"ACE_microDAGR", "ACE_DAGR", "ACE_Vector"};
+			backpack[] = {"B_Bergen_hex_F"};
 		};
 				
 		class SpecAssR2
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			backpack[] = {"B_Bergen_hex_F"};
 		};
 		
 		class SpecAssR1
 		{
-	        weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
+	        	weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
+			backpack[] = {"B_Bergen_hex_F"};
 		};
 		
 		////////////////////////////////////////////////////////////SNIPER
@@ -545,7 +561,7 @@ class AllowedCachesGear
 			pointers[] = {"RH_HBLM","RH_HBLM_des"};
 			muzzle[] = {"muzzle_snds_H","muzzle_snds_acp","muzzle_snds_L","muzzle_snds_M"};
 			allowedItems[] = {"ACE_RangeCard","ACE_SpottingScopeObject","ACE_SpottingScope","U_I_FullGhillie_ard","U_I_FullGhillie_lhs","U_I_FullGhillie_sard","U_B_T_FullGhillie_tna_F","ACE_DAGR","ACE_Vector","ACE_Kestrel4500","ACE_ATragMX","ATC_Laserdesignator_B"};
-		    allowedAmmo[] = {"Laserbatteries"};
+		   	allowedAmmo[] = {"Laserbatteries"};
 		};
 		
 		class SpotterB2
@@ -555,7 +571,7 @@ class AllowedCachesGear
 			pointers[] = {"RH_HBLM","RH_HBLM_des"};
 			muzzle[] = {"muzzle_snds_H","muzzle_snds_acp","muzzle_snds_L","muzzle_snds_M"};
 			allowedItems[] = {"ACE_RangeCard","ACE_SpottingScopeObject","ACE_SpottingScope","U_I_FullGhillie_ard","U_I_FullGhillie_lhs","U_I_FullGhillie_sard","U_B_T_FullGhillie_tna_F","ACE_DAGR","ACE_Vector","ACE_Kestrel4500","ACE_ATragMX","ATC_Laserdesignator_B"};
-		    allowedAmmo[] = {"Laserbatteries"};
+		    	allowedAmmo[] = {"Laserbatteries"};
 		};
 		
 		class SpotterB1
@@ -565,7 +581,7 @@ class AllowedCachesGear
 			pointers[] = {"RH_HBLM","RH_HBLM_des"};
 			muzzle[] = {"muzzle_snds_L"};
 			allowedItems[] = {"ACE_RangeCard","ACE_SpottingScopeObject","ACE_SpottingScope","U_I_FullGhillie_ard","U_I_FullGhillie_lhs","U_I_FullGhillie_sard","U_B_T_FullGhillie_tna_F","ACE_DAGR","ACE_Vector","ACE_Kestrel4500","ACE_ATragMX","ATC_Laserdesignator_B"};
-		allowedAmmo[] = {"Laserbatteries"};
+			allowedAmmo[] = {"Laserbatteries"};
 		};
 				
 		class SpotterR3
@@ -601,40 +617,46 @@ class AllowedCachesGear
 		
 		////////////////////////////////////////////////////////////PARA'RIFLEMAN
 		
-		class ParaRiflemanB3 {		
-		optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
-		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
-		allowedItems[] = {"ACE_Altimeter"};
-		backpacks[] = {"B_Parachute"};		
+		class ParaRiflemanB3 
+		{		
+			optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
+			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
+			allowedItems[] = {"ACE_Altimeter"};
+			backpack[] = {"B_Parachute"};		
 		};
 		
-		class ParaRiflemanB2 {		
-		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
-		allowedItems[] = {"ACE_Altimeter"};
-		backpacks[] = {"B_Parachute"};
+		class ParaRiflemanB2 
+		{		
+			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
+			allowedItems[] = {"ACE_Altimeter"};
+			backpack[] = {"B_Parachute"};
 		};
 		
-		class ParaRiflemanB1 {
-		allowedItems[] = {"ACE_Altimeter"};
-		backpacks[] = {"B_Parachute"};	
+		class ParaRiflemanB1 
+		{
+			allowedItems[] = {"ACE_Altimeter"};
+			backpack[] = {"B_Parachute"};	
 		};
 		
-		class ParaRiflemanR3 {		
-		optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
-		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
-		allowedItems[] = {"ACE_Altimeter"};
-		backpacks[] = {"B_Parachute"};		
+		class ParaRiflemanR3 
+		{		
+			optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
+			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
+			allowedItems[] = {"ACE_Altimeter"};
+			backpack[] = {"B_Parachute"};		
 		};
 		
-		class ParaRiflemanR2 {		
-		muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
-		allowedItems[] = {"ACE_Altimeter"};
-		backpacks[] = {"B_Parachute"};
+		class ParaRiflemanR2 
+		{		
+			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L"};
+			allowedItems[] = {"ACE_Altimeter"};
+			backpack[] = {"B_Parachute"};
 		};
 		
-		class ParaRiflemanR1 {
-		allowedItems[] = {"ACE_Altimeter"};
-		backpacks[] = {"B_Parachute"};	
+		class ParaRiflemanR1 
+		{
+			allowedItems[] = {"ACE_Altimeter"};
+			backpack[] = {"B_Parachute"};	
 		};
 		
 		////////////////////////////////////////////////////////////PARA'TEAMLEADER
@@ -645,19 +667,19 @@ class AllowedCachesGear
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
 			allowedItems[] = {"ACE_microDAGR", "ACE_DAGR", "ACE_Vector", "ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaTeamLeaderB2
 		{
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector", "ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaTeamLeaderB1
 		{
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector", "ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 				
 		class ParaTeamLeaderR3
@@ -666,19 +688,19 @@ class AllowedCachesGear
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			optics[] = {"ACE_optic_Arco_PIP", "ACE_optic_Arco_2D", "ACE_optic_Hamr_2D", "ACE_optic_Hamr_PIP", "RH_ta01nsn_2D", "RH_ta31rco_2D", "RH_eotech553mag", "RH_eothhs1"};
 			allowedItems[] = {"ACE_microDAGR", "ACE_DAGR", "ACE_Vector", "ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaTeamLeaderR2
 		{
 			allowedItems[] = {"ACE_microDAGR", "ACE_DAGR", "ACE_Vector", "ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaTeamLeaderR1
 		{
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector", "ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		////////////////////////////////////////////////////////////PARA'GRENADIER
@@ -688,7 +710,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_SPAR_01_GL_blk_F"};
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaGrenadierB2
@@ -696,7 +718,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_SPAR_01_GL_blk_F"};
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaGrenadierB1
@@ -704,7 +726,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_SPAR_01_GL_blk_F"};
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};		
+		    	backpack[] = {"B_Parachute"};		
 		};
 		
 		class ParaGrenadierR3
@@ -712,7 +734,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_CTAR_GL_hex_F"};
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};			
+		    	backpack[] = {"B_Parachute"};			
 		};
 		
 		class ParaGrenadierR2
@@ -720,7 +742,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_CTAR_GL_hex_F"};
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaGrenadierR1
@@ -728,7 +750,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_CTAR_GL_hex_F"};
 			allowedAmmo[] = {"1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		////////////////////////////////////////////////////////////PARA'AUTORIFLEMAN
@@ -738,7 +760,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_SPAR_02_blk_F"};
 			pointers[] = {"RH_TD_ACB_b","RH_TD_ACB"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaAutoriflemanB2
@@ -746,7 +768,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_SPAR_02_blk_F"};
 			pointers[] = {"RH_TD_ACB_b","RH_TD_ACB"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaAutoriflemanB1
@@ -754,7 +776,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_SPAR_02_blk_F"};
 			pointers[] = {"RH_TD_ACB_b","RH_TD_ACB"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaAutoriflemanR3
@@ -762,7 +784,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_CTARS_hex_F"};
 			pointers[] = {"RH_TD_ACB_b","RH_TD_ACB"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaAutoriflemanR2
@@ -770,7 +792,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_CTARS_hex_F"};
 			pointers[] = {"RH_TD_ACB_b","RH_TD_ACB"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 		class ParaAutoriflemanR1
@@ -778,7 +800,7 @@ class AllowedCachesGear
 			weapons[] = {"arifle_CTARS_hex_F"};
 			pointers[] = {"RH_TD_ACB_b","RH_TD_ACB"};
 			allowedItems[] = {"ACE_Altimeter"};
-		    backpacks[] = {"B_Parachute"};	
+		    	backpack[] = {"B_Parachute"};	
 		};
 		
 				
@@ -820,7 +842,7 @@ class AllowedCachesGear
 		
 		class CommanderR1
 		{
-            weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
+            		weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
 		};
 		
@@ -847,19 +869,19 @@ class AllowedCachesGear
 		class MedicR3
 		{
 			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};	
-            allowedItems[] = {"Medikit"};
+            		allowedItems[] = {"Medikit"};
 		};
 		
 		class MedicR2
 		{
 			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};	
-            allowedItems[] = {"Medikit"};
+           		allowedItems[] = {"Medikit"};
 		};
 		
 		class MedicR1
 		{
 			weapons[] = {"arifle_Katiba_F","arifle_Katiba_C_F"};	
-            allowedItems[] = {"Medikit"};
+            		allowedItems[] = {"Medikit"};
 		};
 		
 		////////////////////////////////////////////////////////////ENGINEER
@@ -916,7 +938,7 @@ class AllowedCachesGear
 			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L","muzzle_snds_H","muzzle_snds_M","muzzle_snds_B","muzzle_snds_H_MG_blk_F"};
 			allowedAmmo[] = {"Laserbatteries","ACE_HuntIR_M203","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","Laserbatteries", "ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
 			allowedItems[] = {"ACE_Clacker","ACE_SpottingScopeObject","ACE_SpottingScope","ACE_Altimeter","ACE_DAGR","ACE_Vector","ATC_Laserdesignator_B","ACE_RangeCard","ACE_HuntIR_monitor","ATC_Laserdesignator_B"};
-			backpacks[] = {"B_Parachute"};
+			backpack[] = {"B_Parachute"};
 		};
 		
 		class SFB2
@@ -961,7 +983,7 @@ class AllowedCachesGear
 			muzzle[] = {"muzzle_snds_acp","muzzle_snds_L","muzzle_snds_H","muzzle_snds_58_blk_F","muzzle_snds_B","muzzle_snds_H_MG_blk_F"};
 			allowedAmmo[] = {"Laserbatteries","ACE_HuntIR_M203","1Rnd_HE_Grenade_shell","UGL_FlareWhite_F","UGL_FlareGreen_F","UGL_FlareRed_F","UGL_FlareYellow_F","UGL_FlareCIR_F","1Rnd_Smoke_Grenade_shell","1Rnd_SmokeBlue_Grenade_shell","1Rnd_SmokeOrange_Grenade_shell","1Rnd_SmokePurple_Grenade_shell","1Rnd_SmokeRed_Grenade_shell","1Rnd_SmokeYellow_Grenade_shell","1Rnd_SmokeGreen_Grenade_shell","Laserbatteries", "ClaymoreDirectionalMine_Remote_Mag","DemoCharge_Remote_Mag","ATMine_Range_Mag","APERSMine_Range_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag"};
 			allowedItems[] = {"ACE_Clacker","ACE_SpottingScopeObject","ACE_SpottingScope","ACE_Altimeter","ACE_DAGR","ACE_Vector","ATC_Laserdesignator_B","ACE_RangeCard","ACE_HuntIR_monitor","ATC_Laserdesignator_O"};
-			backpacks[] = {"B_Parachute"};
+			backpack[] = {"B_Parachute"};
 		};
 		
 		class SFR2

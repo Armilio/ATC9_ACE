@@ -12,6 +12,7 @@ ATC_ClassAttachments = [];
 ATC_ClassallowedAmmo = [];
 ATC_AllMagazines = [];
 ATC_ClassAllowedItems = [];
+ATC_ClassAllowedBackpack = [];
 
 {
 	_class = _x;

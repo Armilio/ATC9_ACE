@@ -1,3 +1,4 @@
+
 class CfgPatches
 {
 	class SticksAndStones_ATC
@@ -14,6 +15,7 @@ class CfgPatches
 			"A3_Static_F_AA_01",
 			"A3_Characters_F",
 			"A3_Weapons_F",
+			"A3_Weapons_F_Tank",
 			"A3_Ui_F",
 			"A3_Drones_F_Soft_F_Gamma_UGV_01",
 			"A3_Drones_F_Air_F_Gamma_UAV_01",
@@ -21,7 +23,11 @@ class CfgPatches
 			"A3_Armor_F_EPC_MBT_01",
 			"A3_Drones_F_Air_F_Gamma_UAV_02",
 			"A3_Air_F_Exp_VTOL_01",
-			"A3_Air_F_Exp_UAV_04"
+			"A3_Air_F_Exp_UAV_04",
+			"A3_Weapons_F_Launchers_RPG32",
+			"A3_Weapons_F_Tank_Launchers_MRAWS",
+			"A3_Weapons_F_Tank_Launchers_Vorona",
+			"A3_Weapons_F_Launchers_NLAW"
 		};
 	};
 };
@@ -503,6 +509,7 @@ class CfgVehicles
 					"1000Rnd_20mm_shells",
 					"PylonRack_1Rnd_ACE_Hellfire_AGM114K",
 					"PylonMissile_1Rnd_ACE_Hellfire_AGM114K",//"ATC_2Rnd_SCALPEL"
+					"ATC_38Rnd_HYDRA70",
 					"ATC_38Rnd_HYDRA70"
 					//"38Rnd_80mm_rockets"
 				};
@@ -1848,7 +1855,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class O_APC_Tracked_02_AA_F: O_APC_Tracked_02_base_F
+	/*class O_APC_Tracked_02_AA_F: O_APC_Tracked_02_base_F
 	{
 		class Components: Components
 		{
@@ -1916,7 +1923,7 @@ class CfgVehicles
 				};
 			};		
 		};
-	};
+	};*/
 	class Car_F: Car
 	{
 	};
@@ -2077,7 +2084,7 @@ class CfgVehicles
 			};
 		};	
 	};
-	class B_APC_Tracked_01_AA_F : B_APC_Tracked_01_base_F
+	/*class B_APC_Tracked_01_AA_F : B_APC_Tracked_01_base_F
 	{
 		//armor = 350;
 		class Components: Components
@@ -2133,6 +2140,39 @@ class CfgVehicles
 					"4Rnd_Titan_long_missiles"
 				};
 			};		
+		};
+	};*/
+	class strategic;
+	class ReammoBox: Strategic
+	{};
+	class WeaponHolder: ReammoBox
+	{};		
+	class Launcher_Base_F : WeaponHolder{};
+	class Weapon_launch_RPG32_F : Launcher_Base_F{};
+	class ATC_Weapon_launch_RPG32_F: Weapon_launch_RPG32_F
+	{
+		scope=2;
+		scopeCurator=2;
+		displayName="RPG32 (ATC)";
+		author="ATC";
+		editorCategory="EdCat_Weapons";
+		editorSubcategory="EdSubcat_Launchers";
+		vehicleClass="WeaponsSecondary";
+		class TransportWeapons
+		{
+			class ATC_launch_RPG32_F
+			{
+				weapon="ATC_launch_RPG32_F";
+				count=1;
+			};
+		};
+		class TransportMagazines
+		{
+			class ATC_RPG32_F
+			{
+				magazine="ATC_RPG32_F";
+				count=1;
+			};
 		};
 	};	
 };
@@ -2205,14 +2245,14 @@ class CfgMagazines
 	{
 		displayName="Titan AT missile (ATC)";
 		displayNameShort="Titan AT (ATC)";
-		ammo="ATC_M_Titan_AT";
+		ammo="M_Titan_AT";
 		mass=130;
 	};
 	class ATC_MAG_Titan_AT_B: Titan_AT
 	{
 		displayName="Titan AT missile (ATC)";
 		displayNameShort="Titan AT (ATC)";
-		ammo="ATC_M_Titan_AT_B";
+		ammo="M_Titan_AT";
 		mass=130;
 	};
 	class 5Rnd_GAT_missiles: VehicleMagazine
@@ -2271,10 +2311,199 @@ class CfgMagazines
 		ammo = "ATC_105mm_HE";
 		count = 6;
 	};
+	class RPG32_F: CA_LauncherMagazine
+	{};
+	class MRAWS_HEAT_F: CA_LauncherMagazine
+	{};
+	class MRAWS_HE_F: MRAWS_HEAT_F
+	{};
+	class ATC_RPG32_F: MRAWS_HEAT_F
+	{
+		author="ATC";
+		displayName="RPG32(ATC)";
+		descriptionShort="$STR_A3_CfgMagazines_LAW1";
+		displaynameshort="$STR_A3_CFGMAGAZINES_TITAN_AT_DNS";
+		model="\A3\weapons_f\launchers\RPG32\pg32v_rocket_item.p3d";
+		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_rpg32_rocket_ca.paa";
+		
+	};	
+	class ATC_RPG32_HE_F: MRAWS_HE_F
+	{
+		author="ATC";
+		displayName="RPG32-HE(ATC)";
+		displayNameShort="$STR_A3_CfgMagazines_50Rnd_120mm_Mo_shells_dns";
+		descriptionShort="$STR_A3_CfgMagazines_LAW2";
+		model="\A3\weapons_f\launchers\RPG32\tbg32v_rocket_item.p3d";
+		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_tbg32v_rocket_ca.paa";
+	};
+	class Vorona_HEAT: CA_LauncherMagazine
+	{
+	};
+	class Vorona_HE: Vorona_HEAT
+	{
+	};
+	class ATC_NLAW_F: Vorona_HEAT
+	{
+		author="ATC";
+		scope=2;
+		displayName="NLAW HEAT (ATC)";
+		descriptionShort="$STR_A3_CfgMagazines_NLAW1";
+		displaynameshort="$STR_A3_CFGMAGAZINES_TITAN_AT_DNS";
+		picture="\A3\weapons_f\launchers\nlaw\data\UI\gear_nlaw_rocket_ca.paa";
+		modelSpecial="\A3\weapons_f\launchers\nlaw\nlaw_loaded_F";
+		model="\A3\weapons_f\launchers\nlaw\nlaw_proxy";
+	};
+	class ATC_NLAW_HE_F: Vorona_HE
+	{
+		author="ATC";
+		scope=2;
+		displayName="NLAW HE (ATC)";
+		descriptionShort="$STR_A3_CfgMagazines_NLAW1";
+		displaynameshort="$STR_A3_CFGMAGAZINES_TITAN_AT_DNS";
+		picture="\A3\weapons_f\launchers\nlaw\data\UI\gear_nlaw_rocket_ca.paa";
+		modelSpecial="\A3\weapons_f\launchers\nlaw\nlaw_loaded_F";
+		model="\A3\weapons_f\launchers\nlaw\nlaw_proxy";
+	};
+	class 250Rnd_30mm_HE_shells: VehicleMagazine{};
+	class 250Rnd_30mm_HE_shells_Tracer_Green: 250Rnd_30mm_HE_shells{};
+	class ATC_250Rnd_30mm_HEDP_shells_Tracer_Green: 250Rnd_30mm_HE_shells_Tracer_Green
+	{
+		displayName="30mm HEDP";
+		displaynameshort="30mm HEDP";
+		count=250;
+		ammo="ATC_30mm_HEDP_Tracer_Green";
+	};	
 };
 	
 class CfgWeapons
 {
+	class Launcher;
+	class Launcher_Base_F: Launcher
+	{
+		class WeaponSlotsInfo;
+	};
+	class launch_MRAWS_base_F: Launcher_Base_F
+	{};
+	class launch_MRAWS_olive_F: launch_MRAWS_base_F
+	{};	
+	class launch_MRAWS_olive_rail_F: launch_MRAWS_olive_F
+	{
+		class OpticsModes
+		{
+			class optic
+			{
+				opticsID=1;
+				useModelOptics=1;
+				opticsZoomMin=0.087499999;
+				opticsZoomMax=0.087499999;
+				opticsZoomInit=0.087499999;
+				distanceZoomMin=300;
+				distanceZoomMax=300;
+				memoryPointCamera="eye";
+				opticsFlare=1;
+				opticsDisablePeripherialVision=1;
+				cameraDir="look";
+				visionMode[]=
+				{
+					"Normal",
+					"NVG"
+				};
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
+			};
+		};	
+	};	
+	class ATC_launch_RPG32_F: launch_MRAWS_olive_rail_F
+	{
+		author="ATC";
+		scope=2;
+		displayName="RPG32 (ATC)";
+		model="\A3\weapons_f\launchers\RPG32\rpg32_F.p3d";
+		picture="\A3\Weapons_F\launchers\RPG32\data\UI\gear_RPG32_X_CA.paa";
+		UiPicture="\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		magazines[]=
+		{
+			"ATC_RPG32_F",
+			"ATC_RPG32_HE_F"
+		};
+	};
+	class launch_Vorona_base_F: Launcher_Base_F
+	{
+		
+		class OpticsModes
+		{
+			class StepScope
+			{
+				opticsID=1;
+				useModelOptics=1;
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera1",
+					"OpticsBlur1"
+				};
+				opticsFlare=0;
+				opticsZoomMin=0.087499999;
+				opticsZoomMax=0.087499999;
+				opticsZoomInit=0.087499999;
+				distanceZoomMin=300;
+				distanceZoomMax=300;
+				memoryPointCamera="eye";
+				cameraDir="look";
+				visionMode[]=
+				{
+					"Normal",
+					"NVG"
+				};
+				thermalMode[]={4,5};
+				opticsDisablePeripherialVision=1;
+				discretefov[]={0.0583333,0.0291667};
+				discreteInitIndex=0;
+			};
+		};
+	};	
+	class ATC_launch_NLAW_F: launch_Vorona_base_F
+	{
+		author="ATC";
+		_generalMacro="launch_NLAW_F";
+		scope=2;
+		displayName="NLAW (ATC)";
+		reloadAction="ReloadRPG";
+		//recoil="recoil_nlaw";
+		//shotPos="muzzlePos2";
+		//shotEnd="muzzleEnd2";
+		model="\A3\weapons_F\launchers\nlaw\nlaw_F.p3d";
+		picture="\A3\weapons_f\launchers\nlaw\data\UI\gear_nlaw_ca.paa";
+		UiPicture="\A3\Weapons_F\Data\UI\icon_at_CA.paa";
+		handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\A3\Weapons_F\Launchers\NLAW\Data\Anim\NLAW.rtm"
+		};
+		drySound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\NLAW\Dry_NLAW",
+			0.17782794,
+			1,
+			15
+		};
+		reloadMagazineSound[]=
+		{
+			"A3\Sounds_F\arsenal\weapons\Launchers\NLAW\Reload_NLAW",
+			1,
+			1,
+			10
+		};
+		descriptionShort="$STR_A3_CfgWeapons_launch_NLAW1";
+		magazines[]=
+		{
+			"ATC_NLAW_F",
+			"ATC_NLAW_HE_F"
+		};
+	};
+	
 	class Default;
 	class Binocular: Default
 	{
@@ -2301,7 +2530,6 @@ class CfgWeapons
 			"NVG"
 		};
 	};
-	class Launcher_Base_F;
 	class launch_Titan_base: Launcher_Base_F
 	{
 	};
@@ -2452,8 +2680,8 @@ class CfgWeapons
 	};
 	class missiles_titan: MissileLauncher
 	{
-		reloadTime=5;
-		magazineReloadTime=120;
+		reloadTime = 1;
+		magazineReloadTime = 6;
 	};	
 	class missiles_DAGR: RocketPods
 	{
@@ -2677,14 +2905,41 @@ class CfgWeapons
 			"6Rnd_105mm_HE_ATC" 
 		};
 	};
-	class gatling_30mm: CannonCore
+	class gatling_30mm_base: CannonCore
 	{
 		ballisticsComputer=2;
+		magazines[]=
+		{
+			"250Rnd_30mm_HE_shells",
+			"250Rnd_30mm_HE_shells_Tracer_Red",
+			"250Rnd_30mm_HE_shells_Tracer_Green",
+			"250Rnd_30mm_APDS_shells",
+			"250Rnd_30mm_APDS_shells_Tracer_Red",
+			"250Rnd_30mm_APDS_shells_Tracer_Green",
+			"250Rnd_30mm_APDS_shells_Tracer_Yellow",
+			"ATC_250Rnd_30mm_HEDP_shells_Tracer_Green" //new
+		};
+	};	
+	class gatling_30mm: gatling_30mm_base
+	{
+		scope=1;
+		muzzles[]=
+		{
+			"HEAT"
+		};
+		class HEAT: gatling_30mm_base
+		{
+			magazines[]=
+			{
+				"ATC_250Rnd_30mm_HEDP_shells_Tracer_Green"
+			};
+		};
 	};
 	class gatling_20mm: CannonCore
 	{
 		ballisticsComputer=2;
 	};
+		
 };
 class CfgAmmo
 {
@@ -2716,9 +2971,9 @@ class CfgAmmo
 	};	
 	class ammo_Penetrator_Vorona: ammo_Penetrator_Base
 	{
-		caliber=50;
-		warheadName="TandemHEAT";
-		hit=515.08002;
+		//caliber=50;
+		//warheadName="TandemHEAT";
+		//hit=515.08002;
 	};
 	class ammo_Penetrator_MRAAWS: ammo_Penetrator_Base
 	{
@@ -2732,11 +2987,11 @@ class CfgAmmo
 		warheadName="TandemHEAT";
 		hit=422.72;
 	};
-	//class ammo_Penetrator_Titan_AT: ammo_Penetrator_Base
-	//{
+	class ammo_Penetrator_Titan_AT: ammo_Penetrator_Base
+	{
 	//	caliber=60;
 	//	hit=515.19;
-	//};
+	};
 	class ammo_Penetrator_Titan_AT_long: ammo_Penetrator_Base
 	{
 		caliber=60;
@@ -2801,7 +3056,18 @@ class CfgAmmo
 		indirectHitRange = 2;
 		explosive = 0.4;
 	};
-	
+	class B_19mm_HE: BulletBase{};
+	class B_30mm_HE: B_19mm_HE{};
+	class B_30mm_MP: B_30mm_HE{};
+	class B_30mm_MP_Tracer_Green: B_30mm_MP{};
+	class ATC_30mm_HEDP_tracer_green: B_30mm_MP_Tracer_Green
+	{
+		hit=90;
+		indirectHit=10;
+		indirectHitRange=2;
+		warheadName="HEAT";
+		caliber=4.4000001;
+	};		
 };
 class cfgMods
 {

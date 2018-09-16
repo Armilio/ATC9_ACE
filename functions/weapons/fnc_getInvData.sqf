@@ -5,7 +5,7 @@ private ["_unit","_invData","_PossInvData","_items"];
 
 _unit = _this;
 _invData = _unit getVariable "inventory2";
-_PossInvData = ["allowedItems","weapons","optics","pointers","allowedAmmo","muzzle","canTake"];
+_PossInvData = ["allowedItems","weapons","optics","pointers","allowedAmmo","muzzle","backpack","canTake"];
 _items = [];
 ATC_ClassWeapons = [];
 ATC_ClassAttachments = [];
@@ -65,6 +65,11 @@ ATC_ClassAllowedItems = [];
 				{
 					{_items pushBackUnique _x} forEach _data;
 				};
+				
+				case "backpack":
+				{
+					{_items pushbackUnique _x} forEach _data;
+				};
 			};
 		
 		} forEach _PossInvData;
@@ -113,12 +118,17 @@ ATC_ClassAllowedItems = [];
 				{
 					ATC_ClassAllowedItems = ATC_ClassAllowedItems + _data;
 				};
+				
+				case "backpack":
+				{
+					ATC_ClassAllowedBackpack = ATC_ClassAllowedBackpack + _data;
+				};
 			};
 			
 		} forEach _PossInvData;
 	};
 } forEach _invData;
 
-_items = _items + ATC_AllMagazines + ATC_ClassWeapons + ATC_ClassAllowedItems + ATC_ClassAttachments;
+_items = _items + ATC_AllMagazines + ATC_ClassWeapons + ATC_ClassAllowedItems + ATC_ClassAttachments + ATC_ClassAllowedBackpack;
 	
 _items

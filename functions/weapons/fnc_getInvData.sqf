@@ -123,6 +123,11 @@ ATC_ClassAllowedItems = [];
 				{
 					ATC_ClassAllowedBackpack = ATC_ClassAllowedBackpack + _data;
 				};
+				
+				case "canTake":
+				{
+					{_items pushbackunique _x} forEach _data;
+				};
 			};
 			
 		} forEach _PossInvData;

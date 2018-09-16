@@ -25,7 +25,7 @@ ATC_ClassWeapons = ATC_ClassWeapons - ["ATC_TITAN_AA_starter"];
 [ATC_ammoCrate, _magazines] call ATC_fnc_fillCrate;
 [ATC_weaponItemsCrate, _attachments] call ATC_fnc_fillCrate;
 [ATC_itemsCrate, ATC_ClassAllowedItems] call ATC_fnc_fillCrate;
-[ATC_BackpacksCrate, ATC_AllowedBackpack,true] call ATC_fnc_fillCrate;
+[ATC_BackpacksCrate, ATC_ClassAllowedBackpack,true] call ATC_fnc_fillCrate;
 
 //[ATC_VACrate, ATC_sideAllowedWeapons - ATC_limitedGears,_magazines, _weaponItems, ATC_sideAllowedItems] call ATC_fnc_fillCrateVA;
 

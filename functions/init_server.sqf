@@ -23,17 +23,17 @@ if (isServer) then {
 
 	ATC_limitedWeaponsCrateA = ["Box_FIA_Wps_F", "mrk_limitedWeaponsCrateA", true] call ATC_fnc_createCrate;
 	ATC_limitedAmmoCrateA = ["Box_FIA_Ammo_F", "mrk_limitedAmmoCrateA", true] call ATC_fnc_createCrate;
-	ATC_limitedBackpackCrateA = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateA", true] call ATC_fnc_createCrate;
+	//ATC_limitedBackpackCrateA = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateA", true] call ATC_fnc_createCrate;
     ATC_limitedWeaponsCrateB = ["Box_FIA_Wps_F", "mrk_limitedWeaponsCrateB", true] call ATC_fnc_createCrate;
     ATC_limitedAmmoCrateB = ["Box_FIA_Ammo_F", "mrk_limitedAmmoCrateB", true] call ATC_fnc_createCrate;
-    ATC_limitedBackpackCrateB = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateB", true] call ATC_fnc_createCrate;
+    //ATC_limitedBackpackCrateB = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateB", true] call ATC_fnc_createCrate;
 		
 	[ATC_limitedWeaponsCrateA, ATC_limitedWeaponCrateParamsA select 0] call ATC_fnc_fillCrateGlobal;
 	[ATC_limitedAmmoCrateA, ATC_limitedWeaponCrateParamsA select 1] call ATC_fnc_fillCrateGlobal;
-	[ATC_limitedBackpackCrateA, ATC_limitedWeaponCrateParamsA select 2] call ATC_fnc_fillCrateGlobal;
+	//[ATC_limitedBackpackCrateA, ATC_limitedWeaponCrateParamsA select 2] call ATC_fnc_fillCrateGlobal;
     [ATC_limitedWeaponsCrateB, ATC_limitedWeaponCrateParamsB select 0] call ATC_fnc_fillCrateGlobal;
     [ATC_limitedAmmoCrateB, ATC_limitedWeaponCrateParamsB select 1] call ATC_fnc_fillCrateGlobal;
-	[ATC_limitedBackpackCrateB, ATC_limitedWeaponCrateParamsB select 2] call ATC_fnc_fillCrateGlobal;
+	//[ATC_limitedBackpackCrateB, ATC_limitedWeaponCrateParamsB select 2] call ATC_fnc_fillCrateGlobal;
   /*  
 	if (ATC_DB_defSide = ATC_sideA) then {
 		B_A1 setpos getmarkerpos "sec_A";

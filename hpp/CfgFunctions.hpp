@@ -82,10 +82,6 @@ class ATC
 		{
 			file = "functions\weapons\fnc_getLimitedItemsList.sqf";
 		};
-		class getAllowedAmmo
-		{
-			file = "functions\weapons\fnc_getAllowedAmmo.sqf";
-		};
 		class getAllPlayerItems
 		{
 			file = "functions\weapons\fnc_getAllPlayerItems.sqf";
@@ -109,18 +105,6 @@ class ATC
 		class refillClientCrates
 		{
 			file = "functions\weapons\fnc_refillClientCrates.sqf";
-		};
-		class addGears
-		{
-			file = "functions\weapons\fnc_addGears.sqf";
-		};
-		class saveCurrentGears
-		{
-			file = "functions\weapons\fnc_saveCurrentGears.sqf";
-		};
-		class getBasicLoadout
-		{
-			file = "functions\weapons\fnc_getBasicLoadout.sqf";
 		};
 	};
 	class Scenes

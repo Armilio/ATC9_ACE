@@ -70,7 +70,12 @@ while {!ATC_gameStoped} do {
 						_VehInSector pushBack (vehicle _x);
 					};
 				}else { //if (vehicle _x == _x) then
-					_unitsInSector pushBack (side _x);
+					_isSF = _x getVariable ["isSF",false];
+					
+					if (!(_isSF)) then
+					{
+						_unitsInSector pushBack (side _x);
+					};
 				};	//added by Armilio (veicoli contano per 1)
 			};
     } forEach allUnits;

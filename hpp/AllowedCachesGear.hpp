@@ -6,7 +6,6 @@ class AllowedCachesGear
 				         "hgun_Pistol_heavy_01_F","hgun_P07_F", //Pistols
 			             "SMG_01_F","SMG_05_F", //SMG
 						 "arifle_SPAR_01_blk_F", //AR
-						 "ATC_TITAN_AA_starter" //Launcher
 						 };
 						 
 			optics[] = {
@@ -29,7 +28,7 @@ class AllowedCachesGear
 							  "ACE_Flashlight_MX991","ACE_MapTools","ACE_wirecutter","ACE_EarPlugs","ACE_Flashlight","ACE_IR_Strobe_Item","ItemMap","ItemCompass","ItemWatch","tf_fadak","FirstAidKit","ACE_NVG_Gen4","Binocular"
 							  };
 			backpack[] = {"TFAR_rt1523g_big_rhs","B_AssaultPack_rgr","B_Kitbag_rgr","B_AssaultPack_rgr_Medic","B_TacticalPack_mcamo","B_Carryall_mcamo","ACE_TacticalLadder_Pack"};
-			canTake[] = {"B_Mortar_01_support","B_Mortar_01_weapon","B_HMG_01_high_weapon_F","B_HMG_01_support_F","B_HMG_01_support_high_F","Titan_AA","Titan_AT","Titan_AP"};
+			canTake[] = {"B_Mortar_01_support","B_Mortar_01_weapon","B_HMG_01_high_weapon_F","B_HMG_01_support_F","B_HMG_01_support_high_F","Titan_AA","Titan_AT","Titan_AP","ATC_TITAN_AA_starter"};
 		};
 		
 		class CommonR
@@ -38,7 +37,6 @@ class AllowedCachesGear
 				         "hgun_ACPC2_F","hgun_Rook40_F", //Pistols
 			             "SMG_01_F","SMG_05_F", //SMG
 						 "arifle_CTAR_Hex_F", //AR
-						 "ATC_TITAN_AA_starter" //Launcher
 						 };
 						 
 			optics[] = {
@@ -61,7 +59,7 @@ class AllowedCachesGear
 							  "ACE_Flashlight_MX991","ACE_MapTools","ACE_wirecutter","ACE_EarPlugs","ACE_Flashlight","ACE_IR_Strobe_Item","ItemMap","ItemCompass","ItemWatch","tf_fadak","FirstAidKit","ACE_NVG_Gen4","Binocular"
 							  };
 			backpack[] = {"TFAR_mr3000","B_AssaultPack_cbr","B_Kitbag_cbr","B_FieldPack_ocamo_Medic","B_TacticalPack_ocamo","B_Carryall_ocamo","ACE_TacticalLadder_Pack"};
-			canTake[] = {"O_Mortar_01_support","O_Mortar_01_weapon","O_HMG_01_high_weapon_F","O_HMG_01_support_F","O_HMG_01_support_high_F","Titan_AA","Titan_AT","Titan_AP"};
+			canTake[] = {"O_Mortar_01_support","O_Mortar_01_weapon","O_HMG_01_high_weapon_F","O_HMG_01_support_F","O_HMG_01_support_high_F","Titan_AA","Titan_AT","Titan_AP","ATC_TITAN_AA_starter"};
 		};
 		
 		////////////////////////////////////////////////////////////RIFLEMAN

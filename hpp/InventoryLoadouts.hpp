@@ -606,7 +606,7 @@ class CfgRespawnInventory
 		class SpecAssB3
 		{
 			weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_microDAGR"};
 			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
 			uniformClass = "Uniform_ATACS";
@@ -616,7 +616,7 @@ class CfgRespawnInventory
 		class SpecAssB2
 		{
 			weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};		
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};		
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
 			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
 			uniformClass = "Uniform_ATACS";
@@ -626,7 +626,7 @@ class CfgRespawnInventory
 		class SpecAssB1
 		{
 			weapons[] = {"arifle_MX_Black_F","ACE_Vector"};
-			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell","DemoCharge_Remote_Mag","DemoCharge_Remote_Mag","SLAMDirectionalMine_Wire_Mag","SLAMDirectionalMine_Wire_Mag","APERSTripMine_Wire_Mag","APERSTripMine_Wire_Mag","ClaymoreDirectionalMine_Remote_Mag","ClaymoreDirectionalMine_Remote_Mag","SatchelCharge_Remote_Mag"};
+			magazines[] = {"30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","30Rnd_65x39_caseless_mag","handgrenade","smokeshellblue","SmokeShell"};
 			items[] = {"FirstAidKit","FirstAidKit","ACE_MapTools","ACE_EarPlugs","ACE_DAGR"};
 			linkedItems[] = {"V_TacVest_oli","H_HelmetSpecB","ItemMap","ItemCompass","ItemWatch","tf_anprc152","ACE_NVG_Gen4","RH_eotexps3","RH_peq15b"};
 			uniformClass = "Uniform_ATACS";

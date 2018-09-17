@@ -30,7 +30,7 @@ ATC_activeSectorsList = [];
     _mrk_info setMarkerType "mil_destroy";
 
     _difficulty = _x select 2;
-    _countdown = ATC_SectorCountdown;//add by Armilio atc9
+
     {
         scopeName "loop";
         if (_x select 1 == _difficulty) then {
@@ -41,10 +41,10 @@ ATC_activeSectorsList = [];
 
     switch (markerColor _mrk_sector) do {
         case ATC_sideMrkColorA: {
-            [_mrk_info, ATC_sideMrkColorA, [markerText _mrk_sector, ATC_sideNameA, _difficulty select 1, _difficulty select 2, _difficulty select 3,_countdown]] call ATC_fnc_setInfoMarker;
+            [_mrk_info, ATC_sideMrkColorA, [markerText _mrk_sector, ATC_sideNameA, _difficulty select 1, _difficulty select 2, _difficulty select 3]] call ATC_fnc_setInfoMarker;
         };
         case ATC_sideMrkColorB: {
-            [_mrk_info, ATC_sideMrkColorB, [markerText _mrk_sector, ATC_sideNameB, _difficulty select 1, _difficulty select 2, _difficulty select 3,_countdown]] call ATC_fnc_setInfoMarker;
+            [_mrk_info, ATC_sideMrkColorB, [markerText _mrk_sector, ATC_sideNameB, _difficulty select 1, _difficulty select 2, _difficulty select 3]] call ATC_fnc_setInfoMarker;
         };
     };
 

@@ -456,21 +456,21 @@ class AllowedCachesGear
 		{
 			weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
 			allowedItems[] = {"ACE_microDAGR", "ACE_DAGR", "ACE_Vector"};
-			backpack[] = {"B_Bergen_tna_f"};
+			backpack[] = {"B_Bergen_tna_F"};
 		};
 				
 		class SpecAssB2
 		{
 	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
-			backpack[] = {"B_Bergen_tna_f"};
+			backpack[] = {"B_Bergen_tna_F"};
 		};
 		
 		class SpecAssB1
 		{
 	        	weapons[] = {"arifle_MX_Black_F","arifle_MXC_Black_F"};
 			allowedItems[] = {"ACE_DAGR", "ACE_Vector"};
-			backpack[] = {"B_Bergen_tna_f"};
+			backpack[] = {"B_Bergen_tna_F"};
 		};
 		
 		class SpecAssR3

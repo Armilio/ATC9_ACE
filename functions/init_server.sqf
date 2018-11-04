@@ -23,17 +23,17 @@ if (isServer) then {
 
 	ATC_limitedWeaponsCrateA = ["Box_FIA_Wps_F", "mrk_limitedWeaponsCrateA", true] call ATC_fnc_createCrate;
 	ATC_limitedAmmoCrateA = ["Box_FIA_Ammo_F", "mrk_limitedAmmoCrateA", true] call ATC_fnc_createCrate;
-	ATC_limitedBackpackCrateA = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateA", true] call ATC_fnc_createCrate;
+	//ATC_limitedBackpackCrateA = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateA", true] call ATC_fnc_createCrate;
     ATC_limitedWeaponsCrateB = ["Box_FIA_Wps_F", "mrk_limitedWeaponsCrateB", true] call ATC_fnc_createCrate;
     ATC_limitedAmmoCrateB = ["Box_FIA_Ammo_F", "mrk_limitedAmmoCrateB", true] call ATC_fnc_createCrate;
-    ATC_limitedBackpackCrateB = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateB", true] call ATC_fnc_createCrate;
+    //ATC_limitedBackpackCrateB = ["Box_FIA_Wps_F", "mrk_limitedBackpackCrateB", true] call ATC_fnc_createCrate;
 		
 	[ATC_limitedWeaponsCrateA, ATC_limitedWeaponCrateParamsA select 0] call ATC_fnc_fillCrateGlobal;
 	[ATC_limitedAmmoCrateA, ATC_limitedWeaponCrateParamsA select 1] call ATC_fnc_fillCrateGlobal;
-	[ATC_limitedBackpackCrateA, ATC_limitedWeaponCrateParamsA select 2] call ATC_fnc_fillCrateGlobal;
+	//[ATC_limitedBackpackCrateA, ATC_limitedWeaponCrateParamsA select 2] call ATC_fnc_fillCrateGlobal;
     [ATC_limitedWeaponsCrateB, ATC_limitedWeaponCrateParamsB select 0] call ATC_fnc_fillCrateGlobal;
     [ATC_limitedAmmoCrateB, ATC_limitedWeaponCrateParamsB select 1] call ATC_fnc_fillCrateGlobal;
-	[ATC_limitedBackpackCrateB, ATC_limitedWeaponCrateParamsB select 2] call ATC_fnc_fillCrateGlobal;
+	//[ATC_limitedBackpackCrateB, ATC_limitedWeaponCrateParamsB select 2] call ATC_fnc_fillCrateGlobal;
   /*  
 	if (ATC_DB_defSide = ATC_sideA) then {
 		B_A1 setpos getmarkerpos "sec_A";
@@ -86,8 +86,7 @@ if (isServer) then {
         R_C7 setpos getmarkerpos "sec_C";
         R_C8 setpos getmarkerpos "sec_C";
 	};
-*/
-Contested = 0;
+*/	
     [] spawn {
         private ['_data'];        
         waitUntil {ATC_gameStarted};
@@ -97,9 +96,6 @@ Contested = 0;
         while {time <= ATC_gameTimeLimit} do {
             sleep 1;
         };
-	/*if (contested == 1) then {
-		sleep (ATC_SectorCountdown + 60); //tempo supplementare
-	};*/
 
         [true, "ATC_fnc_showEndScene", nil, true] spawn BIS_fnc_MP;
     };
@@ -141,6 +137,23 @@ Contested = 0;
 	//added by BDR*Armilio*, ATC7
 	execVM "scripts\Tickets.sqf";
 	execVM "scripts\NoVehCrateFill.sqf";
-	execVM "scripts\Safestart.sqf";
+	//execVM "scripts\Safestart.sqf";
 	execVM "scripts\Weather.sqf";
-};
+	
+	//added by BDR*Armilio*, ATC9
+	["unitDied", {
+		params ["_unit", "_uid"];
+		_Sel2 = UIDArray find _uid;
+		_Array21 = UIDTicketsArray select _sel2;
+		_Vite = (_Array21 select 1)-1;
+
+		if (_sel2 != -1) then { //se trova il playerUID nell'array && se no zero per anti-bug
+			_Array23 = UIDTicketsArray select _sel2;
+			_Array23 set [0, _uid];
+			_Array23 set [1, _Vite];
+			UIDTicketsArray set [_sel2, _Array23];
+			publicVariable "UIDTicketsArray";
+		};
+	}] call CBA_fnc_addEventHandler;
+
+	};

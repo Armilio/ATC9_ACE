@@ -11,6 +11,7 @@ _arg_hour call {
 };
 
 ATC_activeSectorsList = [];
+_countdown = ATC_SectorCountdown;
 
 {
     scopeName "loop";
@@ -30,7 +31,7 @@ ATC_activeSectorsList = [];
     _mrk_info setMarkerType "mil_destroy";
 
     _difficulty = _x select 2;
-    _countdown = ATC_SectorCountdown;//add by Armilio atc9
+
     {
         scopeName "loop";
         if (_x select 1 == _difficulty) then {

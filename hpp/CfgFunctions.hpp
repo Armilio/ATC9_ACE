@@ -61,30 +61,16 @@ class ATC
 			file = "functions\sector_checker\fnc_setInfoMarker.sqf";
 		};
 	};
-	class Vehicles
-	{
-		class getVehicleRestrictions
-		{
-			file = "functions\vehicles\fnc_getVehicleRestrictions.sqf";
-		};
-		class startVehicleRestrictionsChecker
-		{
-			file = "functions\vehicles\fnc_startVehicleRestrictionsChecker.sqf";
-		};
-	};
+	
 	class Weapons
 	{
-		class getItemsListByClasses
+		class getInvData
 		{
-			file = "functions\weapons\fnc_getItemsListByClasses.sqf";
+			file = "functions\weapons\fnc_getInvData.sqf";
 		};
 		class getLimitedItemsList
 		{
 			file = "functions\weapons\fnc_getLimitedItemsList.sqf";
-		};
-		class getAllowedAmmo
-		{
-			file = "functions\weapons\fnc_getAllowedAmmo.sqf";
 		};
 		class getAllPlayerItems
 		{
@@ -109,18 +95,6 @@ class ATC
 		class refillClientCrates
 		{
 			file = "functions\weapons\fnc_refillClientCrates.sqf";
-		};
-		class addGears
-		{
-			file = "functions\weapons\fnc_addGears.sqf";
-		};
-		class saveCurrentGears
-		{
-			file = "functions\weapons\fnc_saveCurrentGears.sqf";
-		};
-		class getBasicLoadout
-		{
-			file = "functions\weapons\fnc_getBasicLoadout.sqf";
 		};
 	};
 	class Scenes

@@ -1,5 +1,6 @@
 //Crates clear-and-fill-again script by {BDR}*Armilio*© for ATC7
 //Heavily edited for ATC8 by {BDR}*Armilio*©
+//edited by Nemesi for ATC9
 {
 	if ((typeOf _x != "Box_FIA_Wps_F") && (typeOf _x != "Box_FIA_Ammo_F")) then {
 		clearMagazineCargoGlobal _x; 
@@ -9,33 +10,79 @@
 	};	
 } foreach vehicles;
 
-BxC additemcargoglobal ["NVGoggles",4]; BxC additemcargoglobal ["NVGoggles_OPFOR",4];
+//BxC additemcargoglobal ["NVGoggles",4]; 
+//BxC additemcargoglobal ["NVGoggles_OPFOR",4];
 BxC addweaponcargoglobal ["ATC_TITAN_AA_starter",1];
-BxC addmagazinecargoglobal ["Titan_AA",2];
-BxC addmagazinecargoglobal["APERSTripMine_Wire_Mag", 1];
-BxC addmagazinecargoglobal ["APERSMine_Range_Mag", 2];
-BxC addmagazinecargoglobal ["ATMine_Range_Mag", 1];
-BxC addmagazinecargoglobal ["DemoCharge_Remote_Mag", 1];
+//BxC addmagazinecargoglobal ["Titan_AA",2];
+BxC addmagazinecargoglobal ["ATC_MAG_Titan_AA",2];
 
-BxB additemcargoglobal ["NVGoggles",4];
-BxB additemcargoglobal ["NVGoggles_OPFOR",4];
+BxC addmagazinecargoglobal["ATC_APERSTripMine_Wire_Mag", 1];
+BxC addmagazinecargoglobal ["ATC_APERSMine_Range_Mag", 2];
+BxC addmagazinecargoglobal ["ATC_ATMine_Range_Mag", 1];
+BxC addmagazinecargoglobal ["ATC_DemoCharge_Remote_Mag", 1];
+
+BxC addmagazinecargoglobal ["ATC_SatchelCharge_Remote_Mag", 1]; 
+BxC addmagazinecargoglobal ["ATC_SLAMDirectionalMine_Wire_Mag", 1]; 
+BxC addItemCargoGlobal ["ACE_Clacker", 10];
+
+//BxB additemcargoglobal ["NVGoggles",4];
+//BxB additemcargoglobal ["NVGoggles_OPFOR",4];
 BxB addweaponcargoglobal ["ATC_TITAN_AA_starter",1];
-BxB addmagazinecargoglobal ["Titan_AA",2];
-BxB addmagazinecargoglobal["APERSTripMine_Wire_Mag", 1];
-BxB addmagazinecargoglobal ["APERSMine_Range_Mag", 2];
-BxB addmagazinecargoglobal ["ATMine_Range_Mag", 1];
-BxB addmagazinecargoglobal ["DemoCharge_Remote_Mag", 1];
+BxB addmagazinecargoglobal ["ATC_MAG_Titan_AA",2];
 
-BxA additemcargoglobal ["NVGoggles",4]; BxA additemcargoglobal ["NVGoggles_OPFOR",4];
+//BxB addmagazinecargoglobal ["Titan_AA",2];
+BxB addmagazinecargoglobal["ATC_APERSTripMine_Wire_Mag", 1];
+BxB addmagazinecargoglobal ["ATC_APERSMine_Range_Mag", 2];
+BxB addmagazinecargoglobal ["ATC_ATMine_Range_Mag", 1];
+BxB addmagazinecargoglobal ["ATC_DemoCharge_Remote_Mag", 1];
+
+BxB addmagazinecargoglobal ["ATC_SatchelCharge_Remote_Mag", 1]; 
+BxB addmagazinecargoglobal ["ATC_SLAMDirectionalMine_Wire_Mag", 1]; 
+BxB addItemCargoGlobal ["ACE_Clacker", 10];
+
+//BxA additemcargoglobal ["NVGoggles",4]; 
+//BxA additemcargoglobal ["NVGoggles_OPFOR",4];
 BxA addweaponcargoglobal ["ATC_TITAN_AA_starter",1];
-BxA addmagazinecargoglobal ["Titan_AA",2];
-BxA addmagazinecargoglobal["APERSTripMine_Wire_Mag", 1];
-BxA addmagazinecargoglobal ["APERSMine_Range_Mag", 2];
-BxA addmagazinecargoglobal ["ATMine_Range_Mag", 1];
-BxA addmagazinecargoglobal ["DemoCharge_Remote_Mag", 1];
+BxA addmagazinecargoglobal ["ATC_MAG_Titan_AA",2];
+
+//BxA addmagazinecargoglobal ["Titan_AA",2];
+BxA addmagazinecargoglobal["ATC_APERSTripMine_Wire_Mag", 1];
+BxA addmagazinecargoglobal ["ATC_APERSMine_Range_Mag", 2];
+BxA addmagazinecargoglobal ["ATC_ATMine_Range_Mag", 1];
+BxA addmagazinecargoglobal ["ATC_DemoCharge_Remote_Mag", 1];
+
+BxA addmagazinecargoglobal ["ATC_SatchelCharge_Remote_Mag", 1]; 
+BxA addmagazinecargoglobal ["ATC_SLAMDirectionalMine_Wire_Mag", 1];  
+BxA addItemCargoGlobal ["ACE_Clacker", 10];
+
+crateAntennaA addmagazinecargoglobal["ATC_APERSTripMine_Wire_Mag", 1]; 
+crateAntennaA addmagazinecargoglobal ["ATC_APERSMine_Range_Mag", 2]; 
+crateAntennaA addmagazinecargoglobal ["ATC_ATMine_Range_Mag", 1]; 
+crateAntennaA addmagazinecargoglobal ["ATC_DemoCharge_Remote_Mag", 1]; 
+crateAntennaA addmagazinecargoglobal ["ATC_SatchelCharge_Remote_Mag", 1]; 
+crateAntennaA addmagazinecargoglobal ["ATC_SLAMDirectionalMine_Wire_Mag", 1];  
+crateAntennaA addItemCargoGlobal ["ACE_Clacker", 4];
+
+crateAntennaB addmagazinecargoglobal["ATC_APERSTripMine_Wire_Mag", 1]; 
+crateAntennaB addmagazinecargoglobal ["ATC_APERSMine_Range_Mag", 2]; 
+crateAntennaB addmagazinecargoglobal ["ATC_ATMine_Range_Mag", 1]; 
+crateAntennaB addmagazinecargoglobal ["ATC_DemoCharge_Remote_Mag", 1]; 
+crateAntennaB addmagazinecargoglobal ["ATC_SatchelCharge_Remote_Mag", 1]; 
+crateAntennaB addmagazinecargoglobal ["ATC_SLAMDirectionalMine_Wire_Mag", 1];  
+crateAntennaB addItemCargoGlobal ["ACE_Clacker", 4];
 
 
+/*
 if ((ATC_DB_attSide == OPFOR) && (ATC_DB_defSide == BLUFOR)) then {
+
+
+BxB addbackpackcargoglobal  ["B_AssaultPack_rgr",3];
+BxC addbackpackcargoglobal  ["B_AssaultPack_rgr",3];
+BxA addbackpackcargoglobal  ["B_AssaultPack_rgr",3];
+};
+
+
+ 
 	BxB addmagazinecargoglobal ["200Rnd_65x39_cased_Box",2];
 	BxB addmagazinecargoglobal ["30Rnd_65x39_caseless_mag",8];
 	BxB addmagazinecargoglobal ["1Rnd_HE_Grenade_shell",2];
@@ -48,7 +95,17 @@ if ((ATC_DB_attSide == OPFOR) && (ATC_DB_defSide == BLUFOR)) then {
 	BxA addmagazinecargoglobal ["30Rnd_65x39_caseless_mag",8];
 	BxA addmagazinecargoglobal ["1Rnd_HE_Grenade_shell",2];
 };
+
+
+
 if ((ATC_DB_attSide == BLUFOR) && (ATC_DB_defSide == OPFOR)) then {
+
+BxB addbackpackcargoglobal  ["B_AssaultPack_cbr",3];
+BxC addbackpackcargoglobal  ["B_AssaultPack_cbr",3];
+BxA addbackpackcargoglobal  ["B_AssaultPack_cbr",3];
+};	
+
+
 	BxA addmagazinecargoglobal ["150Rnd_762x54_Box",2];
 	BxA addmagazinecargoglobal ["100Rnd_580x42_Mag_F",2];
 	BxA addmagazinecargoglobal ["20Rnd_650x39_Cased_Mag_F",4];
@@ -72,6 +129,7 @@ BoxSeaB additemCargoGlobal ["U_O_Wetsuit",20];
 BoxSeaB additemCargoGlobal ["V_RebreatherIR",20];
 BoxSeaA additemCargoGlobal ["U_O_Wetsuit",20];
 BoxSeaA additemCargoGlobal ["V_RebreatherIR",20];
+*/
 
 clearMagazineCargoGlobal MortarBoxR1;
 clearWeaponCargoGlobal MortarBoxR1;
@@ -100,7 +158,6 @@ clearbackpackCargoGlobal MortarBoxB2;
 [truckammoB1, 300] call ace_rearm_fnc_setSupplyCount;
 [truckammoB2, 300] call ace_rearm_fnc_setSupplyCount;
 [cargoammoB, 300] call ace_rearm_fnc_setSupplyCount;
-*/
 
 [BoxammoBtank, "ATC_B_MBT_01_TUSK_F"] call ace_rearm_fnc_addVehicleMagazinesToSupply;
 [BoxammoBtank, "B_APC_Tracked_01_rcws_F"] call ace_rearm_fnc_addVehicleMagazinesToSupply;
@@ -169,6 +226,7 @@ clearbackpackCargoGlobal MortarBoxB2;
 [BoxammoRheli2, "ATC_HELI_ATTACK_O"] call ace_rearm_fnc_addVehicleMagazinesToSupply;
 [BoxammoRheli3, "ATC_HELI_ATTACK_O"] call ace_rearm_fnc_addVehicleMagazinesToSupply;
 [BoxammoRheli4, "ATC_HELI_ATTACK_O"] call ace_rearm_fnc_addVehicleMagazinesToSupply;
+*/
 
 
 MortarBoxR1 addmagazinecargoglobal ["ACE_1Rnd_82mm_Mo_HE",15];
@@ -192,11 +250,11 @@ MortarBoxB2 addmagazinecargoglobal ["ACE_1Rnd_82mm_Mo_Illum",20];
 MortarBoxB2 addmagazinecargoglobal ["ACE_1Rnd_82mm_Mo_Smoke",30];
 
 waituntil {time > 60*110};
-	/*deletevehicle Mortarr1;
+	deletevehicle Mortarr1;
 	deletevehicle Mortarr2;
-	deletevehicle MortarB1;
-	deletevehicle MortarB2;
-
+	deletevehicle Mortarb1;
+	deletevehicle Mortarb2;
+/*
 EqID1 = this addaction ["<t color='#ff0000'>Change type vtol</t>",  
 "vtolname allowdamage false;
 if (typeOf vtolname == 'B_T_VTOL_01_vehicle_F') then {  

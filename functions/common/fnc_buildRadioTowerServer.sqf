@@ -48,5 +48,27 @@ if (isServer) then {
 		TowerKilledR = false;
 		publicVariable "TowerKilledR";
 		_Radiotwobj addMPEventHandler ["MPKilled",{TowerKilledR = true; publicVariable "TowerKilledR"}];
-	};	
+	};
+//Added by Nemesi for ATC9	
+crateAntennaA setpos [((getpos ATC_radioTowerA select 0) + ( 3)), ((getpos ATC_radioTowerA select 1) + ( 3)), 0.00]; 
+
+crateAntennaB setpos [((getpos ATC_radioTowerB select 0) + ( 3)), ((getpos ATC_radioTowerB select 1) + ( 3)), 0.00]; 
+
+H1A setpos [((getpos ATC_radioTowerA select 0) + ( random 10)), ((getpos ATC_radioTowerA select 1) + (random 10)), 0.00]; 
+
+H2A setpos [((getpos ATC_radioTowerA select 0) + ( random 10)), ((getpos ATC_radioTowerA select 1) + (random 10)), 0.00]; 
+
+H3A setpos [((getpos ATC_radioTowerA select 0) + ( random 10)), ((getpos ATC_radioTowerA select 1) + (random 10)), 0.00]; 
+
+H4A setpos [((getpos ATC_radioTowerA select 0) + ( random 10)), ((getpos ATC_radioTowerA select 1) + (random 10)), 0.00]; 
+
+H1B setpos [((getpos ATC_radioTowerB select 0) + ( random 10)), ((getpos ATC_radioTowerB select 1) + (random 10)), 0.00]; 
+
+H2B setpos [((getpos ATC_radioTowerB select 0) + ( random 10)), ((getpos ATC_radioTowerB select 1) + (random 10)), 0.00]; 
+
+H3B setpos [((getpos ATC_radioTowerB select 0) + ( random 10)), ((getpos ATC_radioTowerB select 1) + (random 10)), 0.00]; 
+
+H4B setpos [((getpos ATC_radioTowerB select 0) + ( random 10)), ((getpos ATC_radioTowerB select 1) + (random 10)), 0.00]; 
+
+
 };

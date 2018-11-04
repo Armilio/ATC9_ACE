@@ -3,30 +3,36 @@
 *
 * @author ^eNable [enc0ded] <enc0ded.enable@gmail.com>
 *
-*
 *  Edited by Flipper after CBA 2.0 Update
+*
+*  Edited by NikLox to implement new inventory system
 */
-private ["_magazines", "_weaponItems", "_allMagazines", "_allAttachment"];
+private ["_magazines", "_weaponItems", "_allMagazines", "_allAttachment","_AllowedAttachments","_inventory"];
 
 _arg_unit = _this;
+_attachments = [];
 
-_magazines = [];
-_weaponItems = [];
+_weapon = primaryWeapon _arg_unit;
+_handgun = handgunWeapon _arg_unit;
+
+_AllMagazines = getArray (configFile >> "CfgWeapons" >> _weapon >> "magazines");
+_AllHGMagazines = getArray (configFile >> "CfgWeapons" >> _handgun >> "magazines");
 
 {
-    _allMagazines = getArray (configFile >> "CfgWeapons" >> _x >> "magazines");
-    _allAttachment = [_x] call CBA_fnc_compatibleItems;
+	_compatibleAttachments = [_x] call CBA_fnc_compatibleItems;
+	_allowedAttachments = _compatibleAttachments arrayIntersect ATC_ClassAttachments;
+	_attachments = _attachments + _allowedAttachments;
+}forEach [_weapon,_handgun];
 
-    _magazines = _magazines + (_allMagazines - ATC_limitedGears);
-    _weaponItems = _weaponItems + (_allAttachment - (_allAttachment - ATC_sideAllowedOptics - ATC_sideAllowedPointers - ATC_sideAllowedMuzzles));
+_magazines = _allmagazines + _AllHGMagazines + ATC_ClassAllowedAmmo; 
+ATC_ClassWeapons = ATC_ClassWeapons - ["ATC_TITAN_AA_starter"];
 
-} forEach (weapons _arg_unit);
-
-_magazines = _magazines + ATC_sideAllowedAdditionalAmmo; 
-
-[ATC_weaponsCrate, ATC_sideAllowedWeapons - ATC_limitedGears] call ATC_fnc_fillCrate;
+[ATC_weaponsCrate, ATC_ClassWeapons] call ATC_fnc_fillCrate;
 [ATC_ammoCrate, _magazines] call ATC_fnc_fillCrate;
-[ATC_weaponItemsCrate, _weaponItems] call ATC_fnc_fillCrate;
-[ATC_itemsCrate, ATC_sideAllowedItems] call ATC_fnc_fillCrate;
+[ATC_weaponItemsCrate, _attachments] call ATC_fnc_fillCrate;
+[ATC_itemsCrate, ATC_ClassAllowedItems] call ATC_fnc_fillCrate;
+[ATC_BackpacksCrate, ATC_ClassAllowedBackpack,true] call ATC_fnc_fillCrate;
 
 //[ATC_VACrate, ATC_sideAllowedWeapons - ATC_limitedGears,_magazines, _weaponItems, ATC_sideAllowedItems] call ATC_fnc_fillCrateVA;
+
+true

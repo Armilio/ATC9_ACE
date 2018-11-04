@@ -5,7 +5,7 @@ onLoadMission = "www.bdrclan.com";
 //loadScreen = "";
 
 
-overviewText = "The campaign is a simulation of a war between two armies, the Bluefor and Redfor.";
+overviewText = "The campaign is a simulation of a war between two armies, the Blufor and Redfor.";
 overviewPicture = "picture\ATC6.paa";
 
 
@@ -17,7 +17,8 @@ class Header {
 	maxPlayers = 120;
 };
 
-enableDebugConsole = 0;
+enableDebugConsole = 1;
+forceRotorLibSimulation = 1; 
 joinUnassigned = 0;
 disabledAI = 1;
 respawn = 3;
@@ -44,7 +45,7 @@ class Params
          title = "Terrain grid";
          values[] = {50,25,12,6,3};
          texts[] = {"Lowest","Low","Normal","High","Highest"};
-         default = 25;
+         default = 6;
     };
 
 	class paramViewDistance 
@@ -53,7 +54,7 @@ class Params
 		title = "Viewdistance";
 		values[] = {1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000};
 		texts[] = {"1000", "1500", "2000", "2500", "3000", "3500", "4000", "4500", "5000"};
-		default = 3000;
+		default = 3500;
 	};
 
 	class paramObjectViewDistance 
@@ -62,7 +63,7 @@ class Params
 		title = "Object ViewDistance";
 		values[] = {1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000};
 		texts[] = {"1000", "1500", "2000", "2500", "3000", "3500", "4000", "4500", "5000"};
-		default = 2500;
+		default = 3000;
 	};
 };
 
@@ -102,7 +103,13 @@ class CfgMusic
 #include "hpp\Styles.hpp"
 #include "hpp\Types.hpp"
 
-// Dialogs
+// Inventory
+#include "hpp\InventoryLoadouts.hpp"
+#include "hpp\AllowedCachesGear.hpp"
+
+ #include "hpp\VehicleRestrictions.hpp"
+
+ // Dialogs
 #include "hpp\DiagSelectionArea.hpp"
 
 // Debriefing

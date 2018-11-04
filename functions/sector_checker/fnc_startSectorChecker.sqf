@@ -115,7 +115,7 @@ while {!ATC_gameStoped} do {
 			};
 			//Countdown settore contestato, added by Armilio, ATC9
 			if (_currLevel == 0) then {
-			if (_attakers/2 > _defenders) then {
+			if (_attakers/2 > _defenders && _attakers >= _paramAttckers) then {
 				if (_countdownProv >= _countdown) then { //per evitare che rimanga hint per tutto cd 
 					[format ["Sector %1 is contested by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
@@ -145,7 +145,7 @@ while {!ATC_gameStoped} do {
 			};
 			};
 			if (_currLevel == 1) then {
-			if (_attakers/2.5 > _defenders && (time <= ATC_gameTimeLimit)) then {
+			if (_attakers/2 > _defenders && _attakers >= _paramAttckers) then {
 				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is disputed by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
@@ -195,7 +195,7 @@ while {!ATC_gameStoped} do {
 			*
 			*/
 			if (_currLevel == 0) then {
-			if (_attakers/2 > _defenders) then {
+			if (_attakers/2 > _defenders && _attakers >= _paramAttckers) then {
 				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is disputed by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
@@ -224,7 +224,7 @@ while {!ATC_gameStoped} do {
 			};
 			};
 			if (_currLevel == 1) then {
-			if (_attakers/2.5 > _defenders) then {
+			if (_attakers/2 > _defenders && _attakers >= _paramAttckers) then {
 				if (_countdownProv >= _countdown) then {
 					[format ["Sector %1 is disputed by %2", markerText _arg_marker, ATC_sideNameA], "ATC_fnc_sendHintMsg", nil, false] spawn BIS_fnc_MP;
 				};
@@ -243,7 +243,9 @@ while {!ATC_gameStoped} do {
 					call ATC_fnc_changeAreaSide;
 					//contested = 0;
 				};		
-			}else { //resettare cd se condiziona cessa
+			}
+			else 
+			{ //resettare cd se condiziona cessa
 				[_marker_info, ATC_sideMrkColorB, [markerText _arg_marker, ATC_sideNameB, _currLevel, _paramDefenders, _paramAttckers,_countdown]] call ATC_fnc_setInfoMarker;
 				_countdownProv = _countdown;
 				//if (contested == 1) then {

@@ -32,7 +32,7 @@ switch (_arg_crate) do {
 			_arg_crate addMagazineCargoGlobal _x;
 		} forEach _arg_magazines;
 	};
-	case ATC_limitedBackpackCrateA; 
+	/*case ATC_limitedBackpackCrateA; 
 	case ATC_limitedBackpackCrateB: {
 		private ["_arg_backpack"];
 		_arg_backpack = _this select 1;
@@ -40,5 +40,5 @@ switch (_arg_crate) do {
 		{
 			_arg_crate addBackpackCargoGlobal _x;
 		} forEach _arg_backpack;
-	};
+	};*/
 };

@@ -31,14 +31,16 @@ switch (_arg_crate) do {
 
 		{
         //ADDED BY FLIPPER    
-        if (!(_x in _limitedAmmo)) then {    
+        if (!(_x in _limitedAmmo)) then 
+	{    
 			_arg_crate addMagazineCargo [_x, 20];
             };
         //
 		} forEach _arg_magazines;
 	};
 	case ATC_weaponItemsCrate;
-	case ATC_itemsCrate: {
+	case ATC_itemsCrate: 
+	{
 		private ["_arg_items"];
 		_arg_items = _this select 1;
 
@@ -47,5 +49,13 @@ switch (_arg_crate) do {
 			_arg_crate addItemCargo [_x, 1];
 			};
 		} forEach _arg_items;
+	};
+	
+	case ATC_BackpacksCrate:
+	{
+		private ["_arg_backpacks"];
+		_arg_backpacks = _this select 1;
+		
+		{_arg_crate addBackPackCargo [_x,1];} forEach _arg_backpacks;
 	};
 };
